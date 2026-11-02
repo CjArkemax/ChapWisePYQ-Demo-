@@ -1,26 +1,346 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "katex/dist/katex.min.css";
 
+/* Evolved Global CSS — Ray Optics Pilot
+   Phase 1 = SSOT (LOCKED)  |  Phase 2 = Mirror Report  |  Phase 3 = Answer Review
+   Light mode only. Every component reads tokens. */
+@custom-variant dark (&:is(.dark *));
+
+/* ── 1. TOKEN VALUES ───────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Surfaces */
+  --background: oklch(0.9838 0.0079 286.253);
+  --foreground: oklch(0.2249 0.024 259.2976);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2249 0.024 259.2976);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2249 0.024 259.2976);
+
+  /* Brand */
+  --primary: oklch(0 0 0);
+  --primary-foreground: oklch(1 0 0);
+
+  /* Neutral ramp */
+  --secondary: oklch(0.9486 0.0228 266.9082);
+  --secondary-foreground: oklch(0.2249 0.024 259.2976);
+  --muted: oklch(0.9654 0.0164 274.8224);
+  --muted-foreground: oklch(0.3954 0.0101 278.3714);
+  --subtle-foreground: oklch(0.5704 0.0092 278.5185);
+  --accent: oklch(0.9133 0.024 270.3299);
+  --accent-foreground: oklch(0.2249 0.024 259.2976);
+
+  /* Lines + focus */
+  --border: oklch(0.8286 0.0097 286.1867);
+  --input: oklch(0.8286 0.0097 286.1867);
+  --ring: oklch(0 0 0);
+
+  /* Destructive */
+  --destructive: oklch(0.506 0.1927 27.7018);
+  --destructive-foreground: oklch(1 0 0);
+
+  /* Status families */
+  --success: oklch(0.9624 0.0434 156.7426);
+  --success-foreground: oklch(0.4479 0.1083 151.3277);
+  --success-border: oklch(0.925 0.0806 155.9947);
+  --success-solid: oklch(0.6271 0.1699 149.2138);
+
+  --warning: oklch(0.9729 0.0693 103.1933);
+  --warning-foreground: oklch(0.4762 0.1034 61.9071);
+  --warning-border: oklch(0.9451 0.1243 101.5399);
+  --warning-solid: oklch(0.6658 0.1574 58.3183);
+
+  --danger: oklch(0.9183 0.0418 25.2259);
+  --danger-foreground: oklch(0.4171 0.1702 27.3788);
+  --danger-border: oklch(0.837 0.0898 24.1959);
+
+  /* Phase 2 reserved */
+  --diagnosis-blind: var(--danger);
+  --diagnosis-blind-foreground: var(--danger-foreground);
+  --diagnosis-blind-border: var(--danger-border);
+  --diagnosis-misconception: var(--danger);
+  --diagnosis-misconception-foreground: var(--danger-foreground);
+  --diagnosis-misconception-border: var(--danger-border);
+  --diagnosis-concept-gap: var(--warning);
+  --diagnosis-concept-gap-foreground: var(--warning-foreground);
+  --diagnosis-concept-gap-border: var(--warning-border);
+  --diagnosis-needs-practice: var(--warning);
+  --diagnosis-needs-practice-foreground: var(--warning-foreground);
+  --diagnosis-lucky: var(--warning);
+  --diagnosis-lucky-foreground: var(--warning-foreground);
+  --diagnosis-mastered: var(--success);
+  --diagnosis-mastered-foreground: var(--success-foreground);
+  --diagnosis-mastered-border: var(--success-border);
+  --diagnosis-marked: var(--warning);
+  --diagnosis-marked-foreground: var(--warning-foreground);
+  --diagnosis-unattempted: var(--muted);
+  --diagnosis-unattempted-foreground: var(--muted-foreground);
+
+  --performance-fill: var(--warning-solid);
+  --donut-fill: var(--primary);
+  --donut-track: var(--accent);
+
+  /* Phase 3 reserved */
+  --review-correct: var(--success);
+  --review-correct-foreground: var(--success-foreground);
+  --review-correct-border: var(--success-border);
+  --review-wrong: var(--danger);
+  --review-wrong-foreground: var(--danger-foreground);
+  --review-wrong-border: var(--danger-border);
+
+  --radius: 0.5rem;
 }
 
+/* ── 2. COLOR → TAILWIND MAPPING ──────────────────────────── */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-subtle-foreground: var(--subtle-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-border: var(--success-border);
+  --color-success-solid: var(--success-solid);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-border: var(--warning-border);
+  --color-warning-solid: var(--warning-solid);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+  --color-danger-border: var(--danger-border);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ── 3. FONTS + TYPE SCALE ────────────────────────────────── */
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --text-body: 0.875rem;
+  --text-body--line-height: 1.25rem;
+  --text-body-lg: 1rem;
+  --text-body-lg--line-height: 1.5rem;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1rem;
+  --text-label--letter-spacing: 0.05em;
+  --text-label--font-weight: 600;
+  --text-headline-sm: 1.25rem;
+  --text-headline-sm--line-height: 1.75rem;
+  --text-headline-sm--font-weight: 600;
+  --text-headline-md: 1.5rem;
+  --text-headline-md--line-height: 2rem;
+  --text-headline-md--letter-spacing: -0.01em;
+  --text-headline-md--font-weight: 600;
+  --text-headline-lg: 1.75rem;
+  --text-headline-lg--line-height: 2.125rem;
+  --text-headline-lg--font-weight: 700;
+  --text-display: 2.25rem;
+  --text-display--line-height: 2.75rem;
+  --text-display--letter-spacing: -0.02em;
+  --text-display--font-weight: 700;
+}
+
+/* ── 4. BASE ──────────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background font-sans text-body text-foreground antialiased;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── 5. PHASE 1 — Test Engine (S1) ────────────────────────── */
+@layer components {
+  .panel { @apply rounded-xl border bg-card p-5 shadow-sm; }
+  .panel-header { @apply mb-4 flex items-center justify-between border-b pb-3; }
+  .katex-display { @apply my-4 overflow-x-auto overflow-y-hidden; }
+
+  .segmented { @apply flex items-center gap-1 rounded-lg bg-secondary p-1; }
+  .segmented-item {
+    @apply rounded-md border border-transparent px-3 py-1.5 text-label font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground;
+  }
+  .segmented-item[aria-pressed="true"] {
+    @apply border-border bg-card font-bold text-primary shadow-sm hover:bg-card;
+  }
+
+  .palette-cell {
+    @apply relative flex aspect-square items-center justify-center rounded-lg border bg-background text-body tabular-nums text-muted-foreground transition-colors hover:bg-accent;
+  }
+  .palette-cell[data-state="answered"] {
+    @apply border-success-border bg-success font-bold text-success-foreground hover:bg-success;
+  }
+  .palette-cell[data-state="flagged"] {
+    @apply border-warning-border bg-warning font-bold text-warning-foreground hover:bg-warning;
+  }
+  .palette-cell[data-current="true"] {
+    @apply border-2 border-primary;
+  }
+
+  .difficulty-badge {
+    @apply inline-flex items-center rounded-full border px-2.5 py-1 text-label;
+  }
+  .difficulty-badge[data-difficulty="easy"] {
+    @apply border-success-border bg-success text-success-foreground;
+  }
+  .difficulty-badge[data-difficulty="medium"] {
+    @apply border-warning-border bg-warning text-warning-foreground;
+  }
+  .difficulty-badge[data-difficulty="tough"] {
+    @apply border-danger-border bg-danger text-danger-foreground;
+  }
+
+  .option[data-review="correct"] {
+    @apply border-success-solid bg-success text-success-foreground;
+  }
+  .option[data-review="wrong"] {
+    @apply border-destructive bg-danger text-danger-foreground;
+  }
+
+  /* PYQ Figure — 16:9 locked */
+  .pyq-figure {
+    @apply w-full overflow-hidden rounded-xl border border-border bg-white flex items-center justify-center p-3;
+  }
+  .pyq-figure[data-ratio="16:9"] {
+    @apply aspect-video max-h-[240px];
+  }
+  .pyq-figure[data-ratio="4:3"] {
+    @apply aspect-[4/3] max-h-[320px];
+  }
+  .pyq-figure img {
+    @apply h-full w-full object-contain;
+  }
+  .pyq-figure-16-9 {
+    @apply w-full overflow-hidden rounded-xl border border-border bg-white flex items-center justify-center p-3 aspect-video max-h-[240px];
+  }
+  .pyq-figure-4-3 {
+    @apply w-full overflow-hidden rounded-xl border border-border bg-white flex items-center justify-center p-3 aspect-[4/3] max-h-[320px];
+  }
+  .pyq-figure-16-9 img,
+  .pyq-figure-4-3 img {
+    @apply h-full w-full object-contain;
+  }
+}
+
+/* ── 6. PHASE 2 — Mirror Report (S3) ──────────────────────── */
+@layer components {
+  .donut-track { @apply stroke-accent; }
+  .donut-fill { @apply stroke-primary; }
+  .donut-center-value { @apply text-display font-bold tabular-nums; }
+  .donut-center-label { @apply text-label text-muted-foreground; }
+  .performance-track { @apply h-3 w-full overflow-hidden rounded-full bg-accent; }
+  .performance-fill { @apply h-full rounded-full bg-warning-solid transition-all duration-500; }
+  .performance-fill[data-level="mastered"] { @apply bg-success-solid; }
+  .performance-fill[data-level="needs-practice"] { @apply bg-warning-solid; }
+  .diagnosis-pill {
+    @apply inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-body;
+  }
+  .diagnosis-pill[data-tag="BLIND_GUESS"],
+  .diagnosis-pill[data-tag="MISCONCEPTION"] {
+    @apply border-danger-border bg-danger text-danger-foreground;
+  }
+  .diagnosis-pill[data-tag="CONCEPT_GAP"],
+  .diagnosis-pill[data-tag="NEEDS_CONFIDENCE"],
+  .diagnosis-pill[data-tag="LUCKY_GUESS"] {
+    @apply border-warning-border bg-warning text-warning-foreground;
+  }
+  .diagnosis-pill[data-tag="MASTERED"] {
+    @apply border-success-border bg-success text-success-foreground;
+  }
+  .diagnosis-pill[data-tag="MARKED_SKIPPED"] {
+    @apply border-warning-border bg-warning text-warning-foreground;
+  }
+  .diagnosis-pill[data-tag="UNATTEMPTED"] {
+    @apply border-border bg-muted text-muted-foreground;
+  }
+  .pilot-callout {
+    @apply rounded-xl border border-danger-border bg-danger p-4 text-body;
+  }
+  .pacing-flag {
+    @apply flex items-center gap-2 rounded-lg border p-3 text-body;
+  }
+  .pacing-flag[data-type="overthinking"] {
+    @apply border-warning-border bg-warning text-warning-foreground;
+  }
+  .pacing-flag[data-type="rushed"] {
+    @apply border-border bg-muted text-muted-foreground;
+  }
+  .action-group {
+    @apply rounded-lg border bg-card p-4 shadow-sm;
+  }
+  .action-group[data-severity="REBUILD"] { @apply border-l-4 border-l-destructive; }
+  .action-group[data-severity="REVIEW"] { @apply border-l-4 border-l-warning-solid; }
+  .action-group[data-severity="BRUSH_UP"] { @apply border-l-4 border-l-success-solid; }
+  .action-group[data-severity="MASTERED"] { @apply border-l-4 border-l-border; }
+  .guest-banner {
+    @apply rounded-lg border bg-secondary p-4 text-center;
+  }
+}
+
+/* ── 7. PHASE 3 — Answer Review (S4) ──────────────────────── */
+@layer components {
+  .palette-cell[data-state="correct"] {
+    @apply border-success-border bg-success font-bold text-success-foreground;
+  }
+  .palette-cell[data-state="wrong"] {
+    @apply border-danger-border bg-danger font-bold text-danger-foreground;
+  }
+  .palette-cell[data-state="unattempted"] {
+    @apply border-border bg-background text-muted-foreground;
+  }
+  .diagnosis-tagline {
+    @apply inline-flex items-center gap-1.5 rounded-md border px-2 py-1 text-label;
+  }
+  .diagnosis-tagline[data-tag="MISCONCEPTION"],
+  .diagnosis-tagline[data-tag="BLIND_GUESS"] {
+    @apply border-danger-border bg-danger text-danger-foreground;
+  }
+  .diagnosis-tagline[data-tag="MASTERED"] {
+    @apply border-success-border bg-success text-success-foreground;
+  }
+  .diagnosis-tagline[data-tag="CONCEPT_GAP"] {
+    @apply border-warning-border bg-warning text-warning-foreground;
+  }
+  .explanation-accordion {
+    @apply rounded-xl border bg-card shadow-sm;
+  }
+  .explanation-trigger {
+    @apply flex w-full items-center justify-between p-4 text-left hover:bg-accent;
+  }
+  .explanation-content {
+    @apply border-t bg-card p-6;
+  }
+  .correct-banner {
+    @apply flex items-center gap-4 rounded-xl border border-success-border bg-success p-5;
+  }
+  .key-concept-note {
+    @apply flex gap-4 rounded-xl border bg-accent/50 p-4 text-body italic text-muted-foreground;
+  }
+  .feedback-panel {
+    @apply rounded-xl border bg-card p-4;
+  }
+  .feedback-thumb {
+    @apply rounded-lg border px-4 py-2 text-label font-bold transition-colors hover:bg-accent;
+  }
+  .feedback-thumb[data-active="true"] {
+    @apply border-primary bg-primary text-primary-foreground;
+  }
 }
