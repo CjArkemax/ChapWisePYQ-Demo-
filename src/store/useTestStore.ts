@@ -59,7 +59,7 @@ export const useTestStore = create<TestState>()(
         email: '', 
         currentQuestionIndex: 0, 
         answers: {}, 
-        timeRemainingSeconds: 30 * 60, 
+        timeRemainingSeconds: 40 * 60, 
         isSubmitted: false 
       }),
     }),
