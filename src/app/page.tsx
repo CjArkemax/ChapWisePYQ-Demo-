@@ -61,7 +61,7 @@ export default function WelcomePage() {
         
         <div className="text-center space-y-2">
           <h1 className="text-headline-lg font-bold tracking-tight text-primary">
-            Ray Optics — Chapter Test
+            Chapter Wise PYQ (Demo)
           </h1>
           <p className="flex items-center justify-center gap-1.5 text-muted-foreground text-body-lg">
             <span>Class 12 Physics</span>
