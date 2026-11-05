@@ -1,0 +1,512 @@
+[
+  {
+    "id": "ES-KCET-PHY-2026-Q1",
+    "question": "An electron falls through a distance $1.5\\,\\text{cm}$ in an electric field of $2.0\\times10^4\\,\\text{N/C}$ from rest. The time taken to cover this distance is $(e=1.6\\times10^{-19}\\,\\text{C}, m_e=9.11\\times10^{-31}\\,\\text{kg})$",
+    "imageUrl": null,
+    "options": [
+      "$2.9\\times10^{-9}\\,\\text{s}$",
+      "$2.9\\times10^{9}\\,\\text{s}$",
+      "$4\\times10^{-6}\\,\\text{s}$",
+      "$4\\times10^{6}\\,\\text{s}$"
+    ],
+    "correctOption": 0,
+    "explanation": "The electron starts from rest, so $u=0$. The electric force is $F=eE$. The acceleration is $a=\\frac{eE}{m_e}=\\frac{(1.6\\times10^{-19})(2.0\\times10^4)}{9.11\\times10^{-31}}\\approx3.51\\times10^{15}\\,\\text{m/s}^2$. Using $s=\\frac{1}{2}at^2$, we get $t=\\sqrt{\\frac{2s}{a}}=\\sqrt{\\frac{2(1.5\\times10^{-2})}{3.51\\times10^{15}}}\\approx2.9\\times10^{-9}\\,\\text{s}$.",
+    "difficulty": "medium",
+    "concept": "Electric Field & Field Lines",
+    "year": 2026,
+    "est_time_seconds": 90
+  },
+  {
+    "id": "ES-KCET-PHY-2026-Q2",
+    "question": "What will be the total electric flux through the faces of the cube as given in the figure with side of length 'a' if a charge Q is placed at B midpoint of an edge of the cube?",
+    "imageUrl": "/images/electrostatics/KCET-PHY-2026-Q2.png",
+    "options": [
+      "$\\frac{Q}{8\\epsilon_0}$",
+      "$\\frac{Q}{3\\epsilon_0}$",
+      "$\\frac{Q}{4\\epsilon_0}$",
+      "$\\frac{Q}{2\\epsilon_0}$"
+    ],
+    "correctOption": 2,
+    "explanation": "According to Gauss's law, $\\Phi = \\frac{q_{\\text{enclosed}}}{\\epsilon_0}$. The charge $Q$ is at the midpoint of an edge.\n\nIf we imagine placing three more identical cubes around the same edge, the charge is shared symmetrically by 4 cubes.\n\nThus, the flux through the given cube is $\\Phi = \\frac{1}{4} \\times \\frac{Q}{\\epsilon_0} = \\frac{Q}{4\\epsilon_0}$.",
+    "difficulty": "medium",
+    "concept": "Gauss's Law & Electric Flux",
+    "year": 2026,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "ES-KCET-PHY-2026-Q4",
+    "question": "An electric dipole of dipole moment $\\vec{P}$ is placed in the uniform electric field $\\vec{E}$. Then which of the following statements are correct? Statement-I: The torque on the dipole is $\\vec{P} \\times \\vec{E}$. Statement-II: The potential energy of the dipole is $- \\vec{P} \\cdot \\vec{E}$. Statement-III: The net force on the dipole is non-zero.",
+    "imageUrl": null,
+    "options": [
+      "I, II and III",
+      "I and II only",
+      "II and III only",
+      "I and III only"
+    ],
+    "correctOption": 1,
+    "explanation": "Statement I is correct: torque is $\\vec{\\tau} = \\vec{P} \\times \\vec{E}$.\n\nStatement II is correct: potential energy is $U = -\\vec{P} \\cdot \\vec{E}$.\n\nStatement III is incorrect: in a uniform electric field, the net force on a dipole is zero.",
+    "difficulty": "easy",
+    "concept": "Electric Dipole",
+    "year": 2026,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2026-Q5",
+    "question": "A $200\\,\\text{J}$ of work is done in moving a charge $5\\,\\text{C}$ from a point A where the potential is $-20\\,\\text{V}$ to another point B where potential is V volt. The value of V at B is",
+    "imageUrl": null,
+    "options": [
+      "10 V",
+      "20 V",
+      "40 V",
+      "60 V"
+    ],
+    "correctOption": 1,
+    "explanation": "Work done $W = q(V_B - V_A)$. Substituting the given values: $200 = 5(V_B - (-20)) \\Rightarrow 40 = V_B + 20 \\Rightarrow V_B = 20\\,\\text{V}$.",
+    "difficulty": "easy",
+    "concept": "Electric Potential & Potential Energy",
+    "year": 2026,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2025-Q6",
+    "question": "A metallic sphere of radius $R$ carrying a charge $q$ is kept at a certain distance from another metallic sphere of radius $R/4$ carrying a charge $Q$. What is the electric flux at any point inside the metallic sphere of radius $R$ due to the sphere of radius $R/4$?",
+    "imageUrl": "/images/electrostatics/KCET-PHY-2025-Q6.png",
+    "options": [
+      "$\\frac{Q}{\\epsilon_0} - \\frac{q}{\\epsilon_0}$",
+      "Zero",
+      "$\\frac{q}{\\epsilon_0} - \\frac{Q}{\\epsilon_0}$",
+      "$\\frac{Q}{\\epsilon_0}$"
+    ],
+    "correctOption": 1,
+    "explanation": "Since the spheres are electrostatically shielded from each other, the electric field inside a conductor is zero.\n\nTherefore, the flux is zero.",
+    "difficulty": "easy",
+    "concept": "Gauss's Law & Electric Flux",
+    "year": 2025,
+    "est_time_seconds": 40
+  },
+  {
+    "id": "ES-KCET-PHY-2025-Q8",
+    "question": "A potential at point A is $-3\\,\\text{V}$ and that at another point B is $5\\,\\text{V}$. What is the work done in carrying a charge of $5\\,\\text{mC}$ from B to A?",
+    "imageUrl": null,
+    "options": [
+      "-0.04 J",
+      "-0.4 J",
+      "-4 J",
+      "-40 J"
+    ],
+    "correctOption": 0,
+    "explanation": "The work done is $W = q(V_A - V_B)$. Given $q = 5\\times10^{-3}\\,\\text{C}$, $V_A = -3\\,\\text{V}$, $V_B = 5\\,\\text{V}$. $W = 5\\times10^{-3}(-3 - 5) = 5\\times10^{-3}(-8) = -40\\times10^{-3}\\,\\text{J} = -0.04\\,\\text{J}$.",
+    "difficulty": "easy",
+    "concept": "Electric Potential & Potential Energy",
+    "year": 2025,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2025-Q9",
+    "question": "Charges are uniformly spread on the surface of a conducting sphere. The electric field from the centre of sphere to a point outside the sphere varies with distance $r$ from the centre as",
+    "imageUrl": "/images/electrostatics/KCET-PHY-2025-Q9.png",
+    "options": [
+      "Graph A",
+      "Graph B",
+      "Graph C",
+      "Graph D"
+    ],
+    "correctOption": 0,
+    "explanation": "Inside the conducting sphere ($r < R$), the electric field $E = 0$. Outside the sphere ($r \\ge R$), the electric field behaves like a point charge, $E \\propto 1/r^2$. Graph A correctly shows a flat zero line inside, then a curve decaying as $1/r^2$ outside.",
+    "difficulty": "medium",
+    "concept": "Electric Field & Field Lines",
+    "year": 2025,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "ES-KCET-PHY-2025-Q12",
+    "question": "Which of the following is a correct statement?",
+    "imageUrl": null,
+    "options": [
+      "Gauss's law is true for any open surface",
+      "Gauss's law is not applicable when charges are not symmetrically distributed over a closed surface",
+      "Gauss's law does not hold good for a charge situated outside the Gaussian surface",
+      "Gauss's law is true for any closed surface"
+    ],
+    "correctOption": 3,
+    "explanation": "Gauss's law holds for any closed surface regardless of its shape or charge distribution. Symmetry is not required for validity (only for easy calculations). Open surfaces are not allowed.\n\nCharges outside contribute zero net flux, but the law still applies.\n\nThus, Option D is correct.",
+    "difficulty": "easy",
+    "concept": "Gauss's Law & Electric Flux",
+    "year": 2025,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2024-Q13",
+    "question": "A body has a charge of $-3.2\\mu\\text{C}$. The number of excess electrons will be",
+    "imageUrl": null,
+    "options": [
+      "$5.12\\times10^{25}$",
+      "$5\\times10^{12}$",
+      "$2\\times10^{13}$",
+      "$5.12\\times10^{13}$"
+    ],
+    "correctOption": 2,
+    "explanation": "Charge $q = -3.2\\mu\\text{C} = -3.2\\times10^{-6}\\,\\text{C}$. The number of excess electrons is $n = \\frac{|q|}{e} = \\frac{3.2\\times10^{-6}}{1.6\\times10^{-19}} = 2\\times10^{13}$.",
+    "difficulty": "easy",
+    "concept": "Electric Charge & Coulomb's Law",
+    "year": 2024,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2024-Q14",
+    "question": "A point charge $A$ of $+10\\mu\\text{C}$ and another point charge $B$ of $+20\\mu\\text{C}$ are kept $1\\,\\text{m}$ apart in free space. The electrostatic force on $A$ due to $B$ is $F_1$ and the electrostatic force on $B$ due to $A$ is $F_2$. Then",
+    "imageUrl": null,
+    "options": [
+      "$F_1 = -2F_2$",
+      "$F_1 = -F_2$",
+      "$2F_1 = -F_2$",
+      "$F_1 = F_2$"
+    ],
+    "correctOption": 1,
+    "explanation": "By Newton's third law, the electrostatic force between two charges is equal in magnitude and opposite in direction. The vector notation implies $\\vec{F}_1 = -\\vec{F}_2$.",
+    "difficulty": "easy",
+    "concept": "Electric Charge & Coulomb's Law",
+    "year": 2024,
+    "est_time_seconds": 30
+  },
+  {
+    "id": "ES-KCET-PHY-2024-Q18",
+    "question": "A cube of side $1\\,\\text{cm}$ contains $100$ molecules each having an induced dipole moment of $0.2\\times10^{-6}\\,\\text{C-m}$ in an external electric field of $4\\,\\text{NC}^{-1}$. The electric susceptibility of the materials is ...... $\\text{C}^2\\text{N}^{-1}\\text{m}^{-2}$",
+    "imageUrl": null,
+    "options": [
+      "50",
+      "5",
+      "0.5",
+      "0.05"
+    ],
+    "correctOption": 1,
+    "explanation": "Number density $n = 100 / (10^{-2})^3 = 100 \\times 10^6\\,\\text{molecules/m}^3$. Susceptibility $\\chi_e = \\frac{p}{E} \\times n = \\frac{0.2\\times10^{-6} \\times 100\\times10^6}{4} = 5\\,\\text{C}^2\\text{N}^{-1}\\text{m}^{-2}$.",
+    "difficulty": "medium",
+    "concept": "Dielectric Materials & Susceptibility",
+    "year": 2024,
+    "est_time_seconds": 90
+  },
+  {
+    "id": "ES-KCET-PHY-2023-Q21",
+    "question": "A uniform electric field vector E exists along horizontal direction as shown. The electric potential at A is $V_A$. A small point charge $q$ is slowly taken from A to B along the curved path as shown. The potential energy of the charge when it is at point B is",
+    "imageUrl": "/images/electrostatics/KCET-PHY-2023-Q21.png",
+    "options": [
+      "$q[V_A - Ex]$",
+      "$q[V_A + Ex]$",
+      "$q[Ex - V_A]$",
+      "$qEx$"
+    ],
+    "correctOption": 0,
+    "explanation": "Potential energy at B = Potential difference $\\times$ Charge + Energy spent = $V_A \\times q - q \\cdot E \\cdot x = q(V_A - Ex)$.",
+    "difficulty": "medium",
+    "concept": "Electric Potential & Potential Energy",
+    "year": 2023,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "ES-KCET-PHY-2023-Q22",
+    "question": "A cubical Gaussian surface has side of length $a = 10\\,\\text{cm}$. Electric field lines are parallel to X-axis as shown in figure. The magnitudes of electric fields through surfaces ABCD and EFGH are $6\\,\\text{kNC}^{-1}$ and $9\\,\\text{kNC}^{-1}$ respectively. Then, the total charge enclosed by the cube is [Take, $\\epsilon_0 = 9\\times10^{-12}\\,\\text{Fm}^{-1}$]",
+    "imageUrl": "/images/electrostatics/KCET-PHY-2023-Q22.png",
+    "options": [
+      "-0.27 nC",
+      "1.35 nC",
+      "-1.35 nC",
+      "0.27 nC"
+    ],
+    "correctOption": 3,
+    "explanation": "Total flux $\\phi_E = (E_{right} - E_{left}) A = (9\\text{k} - 6\\text{k}) \\times (0.1)^2 = 3\\times10^3 \\times 10^{-2} = 30\\,\\text{N C}^{-1}\\text{m}^2$.\n\nBy Gauss's law, $q_{enc} = \\epsilon_0 \\phi_E = 30 \\times 9\\times10^{-12} = 270\\times10^{-12}\\,\\text{C} = 0.27\\,\\text{nC}$.",
+    "difficulty": "medium",
+    "concept": "Gauss's Law & Electric Flux",
+    "year": 2023,
+    "est_time_seconds": 90
+  },
+  {
+    "id": "ES-KCET-PHY-2023-Q23",
+    "question": "Electric field at a distance $r$ from an infinitely long uniformly charged straight conductor, having linear charge density $\\lambda$ is $E_1$. Another uniformly charged conductor having same linear charge density $\\lambda$ is bent into a semicircle of radius $r$. The electric field at its centre is $E_2$. Then",
+    "imageUrl": null,
+    "options": [
+      "$E_2 = \\pi r E_1$",
+      "$E_2 = \\frac{E_1}{r}$",
+      "$E_1 = E_2$",
+      "$E_1 = \\pi r E_2$"
+    ],
+    "correctOption": 2,
+    "explanation": "For an infinitely long wire, $E_1 = \\frac{2k\\lambda}{r}$.\n\nFor a semicircular ring at the center, $E_2 = \\frac{2k\\lambda}{r}$.\n\nTherefore, $E_1 = E_2$.",
+    "difficulty": "medium",
+    "concept": "Electric Field & Field Lines",
+    "year": 2023,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "ES-KCET-PHY-2022-Q25",
+    "question": "Four charges $+q$, $+2q$, $+q$ and $-2q$ are placed at the corners A, B, C and D of a square ABCD respectively. The force on a unit positive charge kept at the centre O is",
+    "imageUrl": null,
+    "options": [
+      "along the diagonal BD",
+      "along the diagonal AC",
+      "perpendicular to AD",
+      "zero"
+    ],
+    "correctOption": 0,
+    "explanation": "The charges at A and C are both $+q$ and are equidistant from O, so their forces on the unit positive charge at O are equal and opposite and cancel. The charge at B ($+2q$) repels the unit positive charge, pushing it along the line from B through O toward D. The charge at D ($-2q$) attracts the unit positive charge toward D. Both forces point in the same direction, so the net force is along the diagonal BD.",
+    "difficulty": "medium",
+    "concept": "Electric Charge & Coulomb's Law",
+    "year": 2022,
+    "est_time_seconds": 90
+  },
+  {
+    "id": "ES-KCET-PHY-2022-Q26",
+    "question": "An electric dipole with dipole moment $4\\times10^{-9}\\,\\text{C-m}$ is aligned at $30^\\circ$ with the direction of a uniform electric field of magnitude $5\\times10^4\\,\\text{NC}^{-1}$, the magnitude of the torque acting on the dipole is",
+    "imageUrl": null,
+    "options": [
+      "$\\sqrt{3} \\times 10^{-4}\\,\\text{N-m}$",
+      "$10^{-5}\\,\\text{N-m}$",
+      "$10 \\times 10^{-3}\\,\\text{N-m}$",
+      "$10^{-4}\\,\\text{N-m}$"
+    ],
+    "correctOption": 3,
+    "explanation": "Torque $\\tau = pE\\sin\\theta = (4\\times10^{-9}) (5\\times10^4) \\sin 30^\\circ = 20\\times10^{-5} \\times 0.5 = 10^{-4}\\,\\text{N-m}$.",
+    "difficulty": "easy",
+    "concept": "Electric Dipole",
+    "year": 2022,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2022-Q27",
+    "question": "A charged particle of mass $m$ and charge $q$ is released from rest in a uniform electric field E. Neglecting the effect of gravity, the kinetic energy of the charged particle after $t$ seconds is",
+    "imageUrl": null,
+    "options": [
+      "$\\frac{Eq^2m}{2t^2}$",
+      "$\\frac{Eqm}{t}$",
+      "$\\frac{E^2q^2t^2}{2m}$",
+      "$\\frac{2E^2t^2}{mq}$"
+    ],
+    "correctOption": 2,
+    "explanation": "Acceleration $a = qE/m$. Velocity after time $t$ is $v = at = (qEt)/m$. Kinetic energy $K = \\frac{1}{2}mv^2 = \\frac{1}{2}m\\left(\\frac{qEt}{m}\\right)^2 = \\frac{E^2q^2t^2}{2m}$.",
+    "difficulty": "medium",
+    "concept": "Electric Field & Field Lines",
+    "year": 2022,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "ES-KCET-PHY-2022-Q28",
+    "question": "The electric field and the potential of an electric dipole vary with distance $r$ as",
+    "imageUrl": null,
+    "options": [
+      "$\\frac{1}{r^2}$ and $\\frac{1}{r}$",
+      "$\\frac{1}{r^2}$ and $\\frac{1}{r^3}$",
+      "$\\frac{1}{r^3}$ and $\\frac{1}{r^2}$",
+      "$\\frac{1}{r}$ and $\\frac{1}{r^2}$"
+    ],
+    "correctOption": 2,
+    "explanation": "For an electric dipole on the axial line, $E = \\frac{1}{4\\pi\\epsilon_0}\\frac{2p}{r^3}$ and $V = \\frac{1}{4\\pi\\epsilon_0}\\frac{p}{r^2}$.\n\nThus, $E \\propto 1/r^3$ and $V \\propto 1/r^2$.",
+    "difficulty": "easy",
+    "concept": "Electric Dipole",
+    "year": 2022,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2021-Q30",
+    "question": "Electric field due to infinite, straight uniformly charged wire varies with distance $r$ as",
+    "imageUrl": null,
+    "options": [
+      "$r$",
+      "$\\frac{1}{r}$",
+      "$\\frac{1}{r^2}$",
+      "$r^2$"
+    ],
+    "correctOption": 1,
+    "explanation": "The electric field due to an infinitely long uniformly charged wire is $E = \\frac{\\lambda}{2\\pi\\epsilon_0r}$.\n\nThus, $E \\propto 1/r$.",
+    "difficulty": "easy",
+    "concept": "Electric Field & Field Lines",
+    "year": 2021,
+    "est_time_seconds": 30
+  },
+  {
+    "id": "ES-KCET-PHY-2021-Q32",
+    "question": "Which of the following statements is false in the case of polar molecules?",
+    "imageUrl": null,
+    "options": [
+      "Centres of positive and negative charges are separated in the absence of external electric field.",
+      "Centres of positive and negative charges are separated in the presence of external electric field.",
+      "Do not possess permanent dipole moments.",
+      "Ionic molecule HCl is the example of polar molecule."
+    ],
+    "correctOption": 2,
+    "explanation": "Polar molecules have their centres of positive and negative charges separated even in the absence of an external field, meaning they possess a permanent dipole moment.\n\nThus, saying they do not possess permanent dipole moments is false.",
+    "difficulty": "easy",
+    "concept": "Dielectric Materials & Susceptibility",
+    "year": 2021,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2020-Q33",
+    "question": "A point charge $q$ is placed at the corner of a cube of side $a$ as shown in the figure. What is the electric flux through the face ABCD?",
+    "imageUrl": "/images/electrostatics/KCET-PHY-2020-Q33.png",
+    "options": [
+      "0",
+      "$\\frac{q}{24\\epsilon_0}$",
+      "$\\frac{q}{6\\epsilon_0}$",
+      "$\\frac{q}{72\\epsilon_0}$"
+    ],
+    "correctOption": 1,
+    "explanation": "If a charge is placed at the corner of a cube, it can be shared by 8 identical cubes. The charge on one cube is $q/8$. This charge is at the corner touching 3 faces, so flux passes through the other 3 faces equally. Flux through one such face = $\\frac{1}{3} \\times \\frac{q/8}{\\epsilon_0} = \\frac{q}{24\\epsilon_0}$.",
+    "difficulty": "medium",
+    "concept": "Gauss's Law & Electric Flux",
+    "year": 2020,
+    "est_time_seconds": 90
+  },
+  {
+    "id": "ES-KCET-PHY-2020-Q34",
+    "question": "The electric field lines on the left have twice the separation on those on the right as shown in figure. If the magnitude of the field at A is $40\\,\\text{Vm}^{-1}$, what is the force on $20\\mu\\text{C}$ charge kept at B?",
+    "imageUrl": "/images/electrostatics/KCET-PHY-2020-Q34.png",
+    "options": [
+      "$4\\times10^{-4}\\,\\text{N}$",
+      "$8\\times10^{-4}\\,\\text{N}$",
+      "$16\\times10^{-4}\\,\\text{N}$",
+      "$1\\times10^{-4}\\,\\text{N}$"
+    ],
+    "correctOption": 0,
+    "explanation": "The separation between field lines is inversely proportional to the electric field.\n\nIf separation at left (B) is twice that at right (A), then $E_B = E_A / 2 = 20\\,\\text{V/m}$.\n\nForce $F = qE_B = 20\\times10^{-6} \\times 20 = 4\\times10^{-4}\\,\\text{N}$.",
+    "difficulty": "medium",
+    "concept": "Electric Field & Field Lines",
+    "year": 2020,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "ES-KCET-PHY-2020-Q37",
+    "question": "Figure shows three points A, B and C in a region of uniform electric field E. The line AB is perpendicular and BC is parallel to the field lines. Then, which of the following holds good? ($V_A, V_B$ and $V_C$ represent the electric potential at points A, B and C, respectively)",
+    "imageUrl": "/images/electrostatics/KCET-PHY-2020-Q37.png",
+    "options": [
+      "$V_A = V_B = V_C$",
+      "$V_A = V_B > V_C$",
+      "$V_A = V_B < V_C$",
+      "$V_A > V_B = V_C$"
+    ],
+    "correctOption": 1,
+    "explanation": "Since AB is perpendicular to the electric field, it lies on an equipotential surface, so $V_A = V_B$. The electric potential decreases in the direction of the electric field.\n\nSince BC is parallel to the field, $V_B > V_C$.\n\nThus, $V_A = V_B > V_C$.",
+    "difficulty": "easy",
+    "concept": "Electric Potential & Potential Energy",
+    "year": 2020,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2019-Q39",
+    "question": "Two metal plates are separated by $2\\,\\text{cm}$. The potentials of the plates are $-10\\,\\text{V}$ and $+30\\,\\text{V}$. The electric field between the two plates is",
+    "imageUrl": null,
+    "options": [
+      "$500\\,\\text{V/m}$",
+      "$1000\\,\\text{V/m}$",
+      "$2000\\,\\text{V/m}$",
+      "$3000\\,\\text{V/m}$"
+    ],
+    "correctOption": 2,
+    "explanation": "Potential difference $\\Delta V = 30 - (-10) = 40\\,\\text{V}$. Distance $d = 2\\,\\text{cm} = 0.02\\,\\text{m}$. Electric field $E = \\frac{\\Delta V}{d} = \\frac{40}{0.02} = 2000\\,\\text{V/m}$.",
+    "difficulty": "easy",
+    "concept": "Electric Potential & Potential Energy",
+    "year": 2019,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2019-Q42",
+    "question": "A particle of mass $m$ and charge $q$ is placed at rest in uniform electric field E and then released. The kinetic energy attained by the particle after moving a distance $y$ is",
+    "imageUrl": null,
+    "options": [
+      "$qEy^2$",
+      "$qE^2 y$",
+      "$qEy$",
+      "$q^2 Ey$"
+    ],
+    "correctOption": 2,
+    "explanation": "Work done by the electric field is $W = F \\cdot y = qE \\cdot y$.\n\nBy the work-energy theorem, this work done is equal to the kinetic energy attained. So, $KE = qEy$.",
+    "difficulty": "easy",
+    "concept": "Electric Field & Field Lines",
+    "year": 2019,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "ES-KCET-PHY-2019-Q43",
+    "question": "An electric dipole is kept in non-uniform electric field. It generally experiences",
+    "imageUrl": null,
+    "options": [
+      "a force and torque",
+      "a force but not a torque",
+      "a torque but not a force",
+      "neither a force nor a torque"
+    ],
+    "correctOption": 0,
+    "explanation": "In a non-uniform electric field, the forces on the two charges of the dipole are unequal, resulting in a net force.\n\nSince the forces are at different positions, they also create a torque.\n\nThus, it experiences both.",
+    "difficulty": "easy",
+    "concept": "Electric Dipole",
+    "year": 2019,
+    "est_time_seconds": 30
+  },
+  {
+    "id": "ES-KCET-PHY-2019-Q44",
+    "question": "The figure gives the electric potential V as a function of distance through four regions on x-axis. Which of the following is true for the magnitude of the electric field E in these regions?",
+    "imageUrl": "/images/electrostatics/KCET-PHY-2019-Q44.png",
+    "options": [
+      "$E_A > E_B > E_C > E_D$",
+      "$E_A = E_C$ and $E_B < E_D$",
+      "$E_B = E_D$ and $E_A < E_C$",
+      "$E_A < E_B < E_C < E_D$"
+    ],
+    "correctOption": 1,
+    "explanation": "The magnitude of the electric field is the magnitude of the slope of the V-x graph ($E = -dV/dx$). Regions A and C are horizontal lines, so slope is zero: $E_A = E_C = 0$. Region D is steeper than region B, so $E_D > E_B$.\n\nThus, $E_A = E_C$ and $E_B < E_D$.",
+    "difficulty": "medium",
+    "concept": "Electric Potential & Potential Energy",
+    "year": 2019,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "ES-KCET-PHY-2018-Q49",
+    "question": "The work done to move a charge on an equipotential surface is",
+    "imageUrl": null,
+    "options": [
+      "infinity",
+      "less than 1",
+      "greater than 1",
+      "zero"
+    ],
+    "correctOption": 3,
+    "explanation": "On an equipotential surface, the potential difference $\\Delta V = 0$. The work done is $W = q\\Delta V = q(0) = 0$.",
+    "difficulty": "easy",
+    "concept": "Electric Potential & Potential Energy",
+    "year": 2018,
+    "est_time_seconds": 30
+  },
+  {
+    "id": "ES-KCET-PHY-2017-Q51",
+    "question": "$4 \\times 10^{10}$ electrons are removed from a neutral metal sphere of diameter $20\\,\\text{cm}$ placed in air. The magnitude of the electric field (in $\\text{NC}^{-1}$) at a distance of $20\\,\\text{cm}$ from its centre is",
+    "imageUrl": null,
+    "options": [
+      "640",
+      "5760",
+      "Zero",
+      "1440"
+    ],
+    "correctOption": 3,
+    "explanation": "Charge $q = ne = 4\\times10^{10} \\times 1.6\\times10^{-19} = 6.4\\times10^{-9}\\,\\text{C}$. The sphere has radius $10\\,\\text{cm}$, so the point at $r = 20\\,\\text{cm} = 0.2\\,\\text{m}$ from the centre lies outside the sphere, and the sphere acts like a point charge at its centre. $E = k\\frac{q}{r^2} = 9\\times10^9 \\times \\frac{6.4\\times10^{-9}}{0.04} = \\frac{57.6}{0.04} = 1440\\,\\text{NC}^{-1}$.",
+    "difficulty": "medium",
+    "concept": "Electric Field & Field Lines",
+    "year": 2017,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "ES-KCET-PHY-2017-Q52",
+    "question": "Two spheres of electric charges $+2\\,\\text{nC}$ and $-8\\,\\text{nC}$ are placed at a distance $d$ apart. If they are allowed to touch each other, what is the new distance between them to get a repulsive force of same magnitude as before?",
+    "imageUrl": null,
+    "options": [
+      "$d$",
+      "$\\frac{d}{2}$",
+      "$\\frac{3d}{4}$",
+      "$\\frac{4d}{3}$"
+    ],
+    "correctOption": 2,
+    "explanation": "Initial force magnitude $F = k \\frac{(2)(8)}{d^2} = 16k/d^2$. After touching, total charge is $2 - 8 = -6\\,\\text{nC}$, shared equally: $-3\\,\\text{nC}$ each. New force $F' = k\\frac{(3)(3)}{(d')^2} = 9k/(d')^2$. Equating magnitudes: $16/d^2 = 9/(d')^2 \\Rightarrow d' = \\frac{3}{4}d$.",
+    "difficulty": "medium",
+    "concept": "Electric Charge & Coulomb's Law",
+    "year": 2017,
+    "est_time_seconds": 90
+  }
+]

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import { useTestStore } from '@/store/useTestStore';
@@ -10,15 +10,26 @@ import { toast } from 'sonner';
 import { Clock } from 'lucide-react';
 
 export default function WelcomePage() {
-  const [email, setEmail] = useState('');
+  const [inputemail, setInputEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   
   const setStoreEmail = useTestStore((state) => state.setEmail);
   const resetStore = useTestStore((state) => state.resetStore);
 
+   const email = useTestStore((s) => s.email);
+  const hasHydrated = useTestStore((s) => s._hasHydrated);
+
+  // NEWAuto-redirect if inputemail exists in localStorage
+  useEffect(() => {
+    if (hasHydrated && email) {
+      router.replace('/home');
+    }
+  }, [hasHydrated, email, router]);
+
+
    async function handleStart() {
-    if (!email.trim()) return;
+    if (!inputemail.trim()) return;
     setIsLoading(true);
 
     try {
@@ -28,13 +39,13 @@ export default function WelcomePage() {
       // 2. Upsert user to Supabase
       const { error } = await supabase
         .from('pilot_users')
-        .upsert({ email: email.trim() }, { onConflict: 'email' });
+        .upsert({ email: inputemail.trim() }, { onConflict: 'email' });
 
       if (error) throw error;
 
-      // 3. Save email to Zustand & navigate
-      setStoreEmail(email.trim());
-      router.push('/test');
+      // 3. Save inputemail to Zustand & navigate
+      setStoreEmail(inputemail.trim());
+      router.push('/chapters');
     } catch (err: any) {
       console.error(err);
       toast.error(err.message || 'Something went wrong. Check console.');
@@ -66,15 +77,15 @@ export default function WelcomePage() {
 
         <div className="space-y-4">
           <div className="space-y-2 ">
-            <label htmlFor="email" className="text-label text-foreground">
+            <label htmlFor="inputemail" className="text-label text-foreground">
               Enter your email
             </label>
             <Input 
-              id="email"
+              id="inputemail"
               type="text" 
               placeholder="student@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={inputemail}
+              onChange={(e) => setInputEmail(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleStart()}
               disabled={isLoading}
             />
@@ -84,7 +95,7 @@ export default function WelcomePage() {
             className="w-full" 
             size="lg"
             onClick={handleStart}
-            disabled={!email.trim() || isLoading}
+            disabled={!inputemail.trim() || isLoading}
           >
             {isLoading ? 'Starting...' : 'Start Test'}
           </Button>

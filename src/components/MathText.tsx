@@ -1,11 +1,17 @@
 import katex from 'katex';
+import 'katex/dist/katex.min.css';
 
 interface MathTextProps {
-  children: string;
+  children: React.ReactNode;
   className?: string;
 }
 
 export function MathText({ children, className }: MathTextProps) {
+  // Non-string children: render as-is (number, element, null, undefined)
+  if (typeof children !== 'string') {
+    return <span className={className}>{children}</span>;
+  }
+
   // Split by $ signs to find math blocks
   const parts = children.split(/(\$[^$\n]+?\$)/g);
 

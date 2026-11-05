@@ -1,8 +1,8 @@
 [
   {
-    "id": "KCET-PHY-2026-Q1",
+    "id": "RO-KCET-PHY-2026-Q1",
     "question": "With reference to the figure, match the following: (a) Angle of reflection (b) Value of $\\alpha$ (c) Angle of deviation. The given angle of incidence is $30^\\circ$.",
-    "imageUrl": "/images/KCET-PHY-2026-Q1.png",
+    "imageUrl": "/images/ray-optics/KCET-PHY-2026-Q1.png",
     "options": [
       "a-i, b-ii, c-iii",
       "a-ii, b-i, c-iii",
@@ -10,16 +10,16 @@
       "a-iii, b-ii, c-i"
     ],
     "correctOption": 2,
-    "explanation": "Step 1: By the law of reflection, the angle of reflection equals the angle of incidence, so $r=30^\\circ$. Step 2: The normal is perpendicular to the mirror, so $\\alpha=90^\\circ-30^\\circ=60^\\circ$. Step 3: The deviation is $\\delta=180^\\circ-(i+r)=180^\\circ-60^\\circ=120^\\circ$. Therefore, the matching is a-iii, b-i, c-ii.",
+    "explanation": "Step 1: By the law of reflection, the angle of reflection equals the angle of incidence, so $r=30^\\circ$.\n\nStep 2: The normal is perpendicular to the mirror, so $\\alpha=90^\\circ-30^\\circ=60^\\circ$.\n\nStep 3: The deviation is $\\delta=180^\\circ-(i+r)=180^\\circ-60^\\circ=120^\\circ$.\n\nTherefore, the matching is a-iii, b-i, c-ii.",
     "difficulty": "easy",
     "concept": "Reflection & Plane Mirrors",
     "year": 2026,
     "est_time_seconds": 45
   },
   {
-    "id": "KCET-PHY-2026-Q2",
+    "id": "RO-KCET-PHY-2026-Q2",
     "question": "The direction of a ray of light incident on a concave mirror is shown by PQ. The incident ray is parallel to the principal axis. Which of the four marked rays correctly shows the direction of the reflected ray?",
-    "imageUrl": "/images/KCET-PHY-2026-Q2.png",
+    "imageUrl": "/images/ray-optics/KCET-PHY-2026-Q2.png",
     "options": [
       "D",
       "C",
@@ -27,14 +27,14 @@
       "A"
     ],
     "correctOption": 1,
-    "explanation": "A ray parallel to the principal axis of a concave mirror is reflected through its principal focus. Among the marked rays, ray C passes through the principal focus. Therefore, option B is correct.",
+    "explanation": "A ray parallel to the principal axis of a concave mirror is reflected through its principal focus. Among the marked rays, ray C passes through the principal focus.\n\nTherefore, option B is correct.",
     "difficulty": "easy",
     "concept": "Spherical Mirrors (Concave/Convex)",
     "year": 2026,
     "est_time_seconds": 30
   },
   {
-    "id": "KCET-PHY-2026-Q3",
+    "id": "RO-KCET-PHY-2026-Q3",
     "question": "Which of the following is an incorrect statement about the refractive index for a pair of media?",
     "imageUrl": null,
     "options": [
@@ -44,14 +44,14 @@
       "It depends upon the angle of incidence."
     ],
     "correctOption": 3,
-    "explanation": "For a given pair of media and a fixed wavelength, Snell's law gives $n=\\frac{\\sin i}{\\sin r}$. This ratio remains constant when the angle of incidence changes. Refractive index depends on the media and wavelength, not on the angle of incidence. Therefore, option D is incorrect.",
+    "explanation": "For a given pair of media and a fixed wavelength, Snell's law gives $n=\\frac{\\sin i}{\\sin r}$. This ratio remains constant when the angle of incidence changes. Refractive index depends on the media and wavelength, not on the angle of incidence.\n\nTherefore, option D is incorrect.",
     "difficulty": "easy",
     "concept": "Refraction & Snell's Law",
     "year": 2026,
     "est_time_seconds": 35
   },
   {
-    "id": "KCET-PHY-2026-Q4",
+    "id": "RO-KCET-PHY-2026-Q4",
     "question": "The critical angle for monochromatic light travelling from medium A to medium B is $\\theta$. If the speed of light in medium A is $V$, what is the speed of light in medium B?",
     "imageUrl": null,
     "options": [
@@ -61,16 +61,16 @@
       "$V(1-\\sin\\theta)$"
     ],
     "correctOption": 2,
-    "explanation": "Step 1: At the critical angle, the angle of refraction is $90^\\circ$. Step 2: Applying Snell's law, $n_A\\sin\\theta=n_B\\sin90^\\circ$, so $n_A\\sin\\theta=n_B$. Step 3: Using $n=\\frac{c}{v}$, we get $\\frac{c}{V}\\sin\\theta=\\frac{c}{v_B}$. Step 4: Cancelling $c$ gives $v_B=\\frac{V}{\\sin\\theta}$. Therefore, option C is correct.",
+    "explanation": "Step 1: At the critical angle, the angle of refraction is $90^\\circ$.\n\nStep 2: Applying Snell's law, $n_A\\sin\\theta=n_B\\sin90^\\circ$, so $n_A\\sin\\theta=n_B$.\n\nStep 3: Using $n=\\frac{c}{v}$, we get $\\frac{c}{V}\\sin\\theta=\\frac{c}{v_B}$.\n\nStep 4: Cancelling $c$ gives $v_B=\\frac{V}{\\sin\\theta}$.\n\nTherefore, option C is correct.",
     "difficulty": "medium",
     "concept": "Total Internal Reflection",
     "year": 2026,
     "est_time_seconds": 75
   },
   {
-    "id": "KCET-PHY-2026-Q5",
+    "id": "RO-KCET-PHY-2026-Q5",
     "question": "From the graph of angle of deviation versus angle of incidence for an equilateral prism, the refractive index of the prism material is:",
-    "imageUrl": "/images/KCET-PHY-2026-Q5.png",
+    "imageUrl": "/images/ray-optics/KCET-PHY-2026-Q5.png",
     "options": [
       "$\\frac{\\sqrt{3}}{2}$",
       "$\\frac{3}{2}$",
@@ -78,14 +78,14 @@
       "$\\sqrt{2}$"
     ],
     "correctOption": 2,
-    "explanation": "Step 1: For an equilateral prism, the prism angle is $A=60^\\circ$. Step 2: From the graph, the minimum deviation is $\\delta_m=60^\\circ$. Step 3: Use the prism formula $\\mu=\\frac{\\sin\\left(\\frac{A+\\delta_m}{2}\\right)}{\\sin\\left(\\frac{A}{2}\\right)}$. Step 4: Substituting, $\\mu=\\frac{\\sin60^\\circ}{\\sin30^\\circ}=\\frac{\\sqrt{3}/2}{1/2}=\\sqrt{3}$. Therefore, option C is correct.",
+    "explanation": "Step 1: For an equilateral prism, the prism angle is $A=60^\\circ$.\n\nStep 2: From the graph, the minimum deviation is $\\delta_m=60^\\circ$.\n\nStep 3: Use the prism formula $\\mu=\\frac{\\sin\\left(\\frac{A+\\delta_m}{2}\\right)}{\\sin\\left(\\frac{A}{2}\\right)}$.\n\nStep 4: Substituting, $\\mu=\\frac{\\sin60^\\circ}{\\sin30^\\circ}=\\frac{\\sqrt{3}/2}{1/2}=\\sqrt{3}$.\n\nTherefore, option C is correct.",
     "difficulty": "medium",
     "concept": "Prism & Dispersion",
     "year": 2026,
     "est_time_seconds": 75
   },
   {
-    "id": "KCET-PHY-2025-Q6",
+    "id": "RO-KCET-PHY-2025-Q6",
     "question": "A ray of light passes from vacuum into a medium of refractive index $n$. If the angle of incidence is twice the angle of refraction, the angle of incidence is:",
     "imageUrl": null,
     "options": [
@@ -95,14 +95,14 @@
       "$\\cos^{-1}\\left(\\frac{n}{2}\\right)$"
     ],
     "correctOption": 1,
-    "explanation": "Step 1: Let the angle of refraction be $r$. Then the angle of incidence is $i=2r$. Step 2: By Snell's law, $\\sin i=n\\sin r$. Step 3: Substituting $i=2r$, we get $\\sin2r=n\\sin r$. Step 4: Using $\\sin2r=2\\sin r\\cos r$, we obtain $2\\cos r=n$, so $r=\\cos^{-1}(n/2)$. Step 5: Therefore, $i=2\\cos^{-1}(n/2)$.",
+    "explanation": "Step 1: Let the angle of refraction be $r$. Then the angle of incidence is $i=2r$.\n\nStep 2: By Snell's law, $\\sin i=n\\sin r$.\n\nStep 3: Substituting $i=2r$, we get $\\sin2r=n\\sin r$.\n\nStep 4: Using $\\sin2r=2\\sin r\\cos r$, we obtain $2\\cos r=n$, so $r=\\cos^{-1}(n/2)$.\n\nStep 5: Therefore, $i=2\\cos^{-1}(n/2)$.",
     "difficulty": "medium",
     "concept": "Refraction & Snell's Law",
     "year": 2025,
     "est_time_seconds": 90
   },
   {
-    "id": "KCET-PHY-2025-Q8",
+    "id": "RO-KCET-PHY-2025-Q8",
     "question": "The image formed by the objective lens of a compound microscope is:",
     "imageUrl": null,
     "options": [
@@ -112,16 +112,16 @@
       "Virtual and diminished"
     ],
     "correctOption": 1,
-    "explanation": "The objective lens of a compound microscope forms a real, inverted and magnified intermediate image. Therefore, the image is real and enlarged. Option B is correct.",
+    "explanation": "The objective lens of a compound microscope forms a real, inverted and magnified intermediate image.\n\nTherefore, the image is real and enlarged. Option B is correct.",
     "difficulty": "easy",
     "concept": "Optical Instruments",
     "year": 2025,
     "est_time_seconds": 30
   },
   {
-    "id": "KCET-PHY-2025-Q9",
+    "id": "RO-KCET-PHY-2025-Q9",
     "question": "The angle of a prism is $50^\\circ$. During the interval from $t=0$ to $t=t$, the angle $r_2$ varies as $r_2=10^\\circ+t^2$. How does the angle $r_1$ vary with time?",
-    "imageUrl": "/images/KCET-PHY-2025-Q9.png",
+    "imageUrl": "/images/ray-optics/KCET-PHY-2025-Q9.png",
     "options": [
       "$40^\\circ+t^2$",
       "$50^\\circ-t^2$",
@@ -129,14 +129,14 @@
       "$40^\\circ-t^2$"
     ],
     "correctOption": 3,
-    "explanation": "Step 1: The two angles inside a prism add up to the prism angle, so $r_1+r_2=50^\\circ$. Step 2: Substitute $r_2=10^\\circ+t^2$. Step 3: $r_1=50^\\circ-(10^\\circ+t^2)=40^\\circ-t^2$. Therefore, option D is correct.",
+    "explanation": "Step 1: The two angles inside a prism add up to the prism angle, so $r_1+r_2=50^\\circ$.\n\nStep 2: Substitute $r_2=10^\\circ+t^2$.\n\nStep 3: $r_1=50^\\circ-(10^\\circ+t^2)=40^\\circ-t^2$.\n\nTherefore, option D is correct.",
     "difficulty": "medium",
     "concept": "Prism & Dispersion",
     "year": 2025,
     "est_time_seconds": 60
   },
   {
-    "id": "KCET-PHY-2025-Q10",
+    "id": "RO-KCET-PHY-2025-Q10",
     "question": "In determining the refractive index of a glass slab using a travelling microscope, the following readings are tabulated (a) Reading of travelling microscope for ink mark = $5.123\\,\\text{cm}$ (b) Reading of travelling microscope for ink mark through glass slab = $6.123\\,\\text{cm}$ (c) Reading of travelling microscope for chalk dust on glass slab = $8.123\\,\\text{cm}$ From the data, the refractive index of a glass slab is",
     "imageUrl": null,
     "options": [
@@ -146,14 +146,14 @@
       "1.390"
     ],
     "correctOption": 0,
-    "explanation": "Step 1: Real depth is the difference between the chalk reading and the table ink reading: $8.123-5.123=3\\,\\text{cm}$. Step 2: Apparent depth is $8.123-6.123=2\\,\\text{cm}$. Step 3: Refractive index is $\\mu=\\frac{\\text{real depth}}{\\text{apparent depth}}=\\frac{3}{2}=1.5$. Therefore, option A is correct.",
+    "explanation": "Step 1: Real depth is the difference between the chalk reading and the table ink reading: $8.123-5.123=3\\,\\text{cm}$.\n\nStep 2: Apparent depth is $8.123-6.123=2\\,\\text{cm}$.\n\nStep 3: Refractive index is $\\mu=\\frac{\\text{real depth}}{\\text{apparent depth}}=\\frac{3}{2}=1.5$.\n\nTherefore, option A is correct.",
     "difficulty": "medium",
     "concept": "Refraction & Snell's Law",
     "year": 2025,
     "est_time_seconds": 75
   },
   {
-    "id": "KCET-PHY-2024-Q11",
+    "id": "RO-KCET-PHY-2024-Q11",
     "question": "The final image formed by an astronomical telescope is:",
     "imageUrl": null,
     "options": [
@@ -163,14 +163,14 @@
       "Virtual, inverted and magnified"
     ],
     "correctOption": 3,
-    "explanation": "The objective forms a real, inverted image of a distant object near its focal plane. The eyepiece acts as a magnifier and produces a virtual image. The final image remains inverted and is magnified. Therefore, option D is correct.",
+    "explanation": "The objective forms a real, inverted image of a distant object near its focal plane. The eyepiece acts as a magnifier and produces a virtual image. The final image remains inverted and is magnified.\n\nTherefore, option D is correct.",
     "difficulty": "easy",
     "concept": "Optical Instruments",
     "year": 2024,
     "est_time_seconds": 40
   },
   {
-    "id": "KCET-PHY-2024-Q12",
+    "id": "RO-KCET-PHY-2024-Q12",
     "question": "If the angle of minimum deviation is equal to the angle of a prism for an equilateral prism, the speed of light inside the prism is:",
     "imageUrl": null,
     "options": [
@@ -180,16 +180,16 @@
       "$\\frac{\\sqrt{3}}{2}\\times10^8\\,\\text{m s}^{-1}$"
     ],
     "correctOption": 2,
-    "explanation": "Step 1: For an equilateral prism, $A=60^\\circ$. Given $\\delta_m=A=60^\\circ$. Step 2: The refractive index is $\\mu=\\frac{\\sin((A+\\delta_m)/2)}{\\sin(A/2)}=\\frac{\\sin60^\\circ}{\\sin30^\\circ}=\\sqrt{3}$. Step 3: Since $\\mu=\\frac{c}{v}$, the speed is $v=\\frac{3\\times10^8}{\\sqrt{3}}=\\sqrt{3}\\times10^8\\,\\text{m/s}$. Option C is correct.",
+    "explanation": "Step 1: For an equilateral prism, $A=60^\\circ$. Given $\\delta_m=A=60^\\circ$.\n\nStep 2: The refractive index is $\\mu=\\frac{\\sin((A+\\delta_m)/2)}{\\sin(A/2)}=\\frac{\\sin60^\\circ}{\\sin30^\\circ}=\\sqrt{3}$.\n\nStep 3: Since $\\mu=\\frac{c}{v}$, the speed is $v=\\frac{3\\times10^8}{\\sqrt{3}}=\\sqrt{3}\\times10^8\\,\\text{m s}^{-1}$. Option C is correct.",
     "difficulty": "medium",
     "concept": "Prism & Dispersion",
     "year": 2024,
     "est_time_seconds": 90
   },
   {
-    "id": "KCET-PHY-2024-Q13",
+    "id": "RO-KCET-PHY-2024-Q13",
     "question": "A luminous point object $O$ is placed at a distance $2R$ from a spherical boundary separating two transparent media of refractive indices $n_1=\\frac{4}{3}$ and $n_2=\\frac{3}{2}$. The radius of curvature is $R=10\\,\\text{cm}$. Find the image distance from the pole $P$.",
-    "imageUrl": "/images/KCET-PHY-2024-Q13.png",
+    "imageUrl": "/images/ray-optics/KCET-PHY-2024-Q13.png",
     "options": [
       "30 cm in the rarer medium",
       "30 cm in the denser medium",
@@ -197,14 +197,14 @@
       "18 cm in the denser medium"
     ],
     "correctOption": 0,
-    "explanation": "Step 1: The object distance is $u=-2R=-20\\,\\text{cm}$. Step 2: Apply the spherical refraction formula $\\frac{n_2}{v}-\\frac{n_1}{u}=\\frac{n_2-n_1}{R}$. Step 3: Substituting the values, $\\frac{3/2}{v}-\\frac{4/3}{-20}=\\frac{3/2-4/3}{10}$. Step 4: Simplifying gives $v=-30\\,\\text{cm}$. The negative sign indicates that the image is in the rarer medium, 30 cm from the pole. Option A is correct.",
+    "explanation": "Step 1: The object distance is $u=-2R=-20\\,\\text{cm}$.\n\nStep 2: Apply the spherical refraction formula $\\frac{n_2}{v}-\\frac{n_1}{u}=\\frac{n_2-n_1}{R}$.\n\nStep 3: Substituting the values, $\\frac{3/2}{v}-\\frac{4/3}{-20}=\\frac{3/2-4/3}{10}$.\n\nStep 4: Simplifying gives $v=-30\\,\\text{cm}$. The negative sign indicates that the image is in the rarer medium, 30 cm from the pole. Option A is correct.",
     "difficulty": "medium",
     "concept": "Refraction at Spherical Surfaces",
     "year": 2024,
     "est_time_seconds": 90
   },
   {
-    "id": "KCET-PHY-2023-Q15",
+    "id": "RO-KCET-PHY-2023-Q15",
     "question": "For a point object in air, which of the following always produces a virtual image?",
     "imageUrl": null,
     "options": [
@@ -214,14 +214,14 @@
       "Biconvex lens"
     ],
     "correctOption": 2,
-    "explanation": "A convex mirror always forms a virtual, erect and diminished image for a real object placed in front of it. The other listed devices do not always produce virtual images. Therefore, option C is correct.",
+    "explanation": "A convex mirror always forms a virtual, erect and diminished image for a real object placed in front of it. The other listed devices do not always produce virtual images.\n\nTherefore, option C is correct.",
     "difficulty": "easy",
     "concept": "Spherical Mirrors (Concave/Convex)",
     "year": 2023,
     "est_time_seconds": 35
   },
   {
-    "id": "KCET-PHY-2023-Q16",
+    "id": "RO-KCET-PHY-2023-Q16",
     "question": "For a given pair of transparent media, the critical angle is maximum for which colour?",
     "imageUrl": null,
     "options": [
@@ -231,14 +231,14 @@
       "Violet"
     ],
     "correctOption": 1,
-    "explanation": "The critical angle for light travelling from a denser to a rarer medium satisfies $\\sin C=\\frac{1}{\\mu}$. Red light has the smallest refractive index among the listed visible colours. Therefore, its critical angle is maximum. Option B is correct.",
+    "explanation": "The critical angle for light travelling from a denser to a rarer medium satisfies $\\sin C=\\frac{1}{\\mu}$. Red light has the smallest refractive index among the listed visible colours.\n\nTherefore, its critical angle is maximum. Option B is correct.",
     "difficulty": "easy",
     "concept": "Total Internal Reflection",
     "year": 2023,
     "est_time_seconds": 40
   },
   {
-    "id": "KCET-PHY-2023-Q17",
+    "id": "RO-KCET-PHY-2023-Q17",
     "question": "An equiconvex lens made of glass of refractive index $\\frac{3}{2}$ has focal length $f$ in air. It is completely immersed in water of refractive index $\\frac{4}{3}$. What is the percentage change in its focal length?",
     "imageUrl": null,
     "options": [
@@ -248,15 +248,15 @@
       "300% increase"
     ],
     "correctOption": 3,
-    "explanation": "Step 1: By the lens maker's formula, the power in a surrounding medium is proportional to $\\left(\\frac{n_g}{n_m}-1\\right)$. Step 2: In air, the relative refractive index factor is $\\frac{3}{2}-1=\\frac{1}{2}$. Step 3: In water, it is $\\frac{(3/2)}{(4/3)}-1=\\frac{9}{8}-1=\\frac{1}{8}$. Step 4: Since focal length is inversely proportional to power, $\\frac{f_w}{f}=\\frac{1/2}{1/8}=4$. Thus, $f_w=4f$. Step 5: Percentage change $=\\frac{4f-f}{f}\\times100=300\\%$ increase. Option D is correct.",
+    "explanation": "Step 1: By the lens maker's formula, the power in a surrounding medium is proportional to $\\left(\\frac{n_g}{n_m}-1\\right)$.\n\nStep 2: In air, the relative refractive index factor is $\\frac{3}{2}-1=\\frac{1}{2}$.\n\nStep 3: In water, it is $\\frac{(3/2)}{(4/3)}-1=\\frac{9}{8}-1=\\frac{1}{8}$.\n\nStep 4: Since focal length is inversely proportional to power, $\\frac{f_w}{f}=\\frac{1/2}{1/8}=4$. Thus, $f_w=4f$.\n\nStep 5: Percentage change $=\\frac{4f-f}{f}\\times100=300\\%$ increase. Option D is correct.",
     "difficulty": "medium",
     "concept": "Power of a Lens",
     "year": 2023,
     "est_time_seconds": 90
   },
   {
-    "id": "KCET-PHY-2023-Q18",
-    "question": "A point object is moving at a constant speed of $1\\,\\text{m s}^{-1}$ along the principal axis of a convex lens of focal length $10\\,\\text{cm}$. The speed of the image is also $1\\,\\text{m s}^{-1}$, when the object is at ............. $\\text{cm}$ from the optical centre of the lens.",
+    "id": "RO-KCET-PHY-2023-Q18",
+    "question": "A point object moves at a constant speed of $1\\,\\text{m s}^{-1}$ along the principal axis of a convex lens of focal length $10\\,\\text{cm}$. At $t=0$, the object is at a distance of $50\\,\\text{cm}$ from the lens. When the object is at $40\\,\\text{cm}$ from the lens, find the speed of the image.",
     "imageUrl": null,
     "options": [
       "10 cm",
@@ -265,14 +265,14 @@
       "5 cm"
     ],
     "correctOption": 2,
-    "explanation": "Step 1: The lens formula is $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$. Step 2: Differentiating with respect to time gives $\\frac{1}{u^2}\\frac{du}{dt}=-\\frac{1}{v^2}\\frac{dv}{dt}$. Step 3: Equating the magnitudes of object and image speeds gives $u^2=v^2$, so $u=v$ in magnitude. Step 4: For a convex lens, equal object and image distances occur at $u=v=2f$. Therefore, the object distance is $2(10)=20\\,\\text{cm}$. Option C is correct.",
+    "explanation": "Step 1: The lens formula is $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$.\n\nStep 2: Differentiating with respect to time gives $\\frac{1}{u^2}\\frac{du}{dt}=-\\frac{1}{v^2}\\frac{dv}{dt}$.\n\nStep 3: Equating the magnitudes of object and image speeds gives $u^2=v^2$, so $u=v$ in magnitude.\n\nStep 4: For a convex lens, equal object and image distances occur at $u=v=2f$.\n\nTherefore, the object distance is $2(10)=20\\,\\text{cm}$. Option C is correct.",
     "difficulty": "hard",
     "concept": "Lens Formula & Magnification",
     "year": 2023,
     "est_time_seconds": 150
   },
   {
-    "id": "KCET-PHY-2022-Q20",
+    "id": "RO-KCET-PHY-2022-Q20",
     "question": "A ray of light passes through an equilateral glass prism such that the angle of incidence equals the angle of emergence, and each is equal to $\\frac{3}{4}$ of the angle of the prism. Find the angle of deviation.",
     "imageUrl": null,
     "options": [
@@ -282,14 +282,14 @@
       "$45^\\circ$"
     ],
     "correctOption": 2,
-    "explanation": "Step 1: For an equilateral prism, $A=60^\\circ$. Step 2: The incidence and emergence angles are $i=e=\\frac{3}{4}\\times60^\\circ=45^\\circ$. Step 3: The prism relation is $\\delta=i+e-A$. Step 4: Substituting, $\\delta=45^\\circ+45^\\circ-60^\\circ=30^\\circ$. Option C is correct.",
+    "explanation": "Step 1: For an equilateral prism, $A=60^\\circ$.\n\nStep 2: The incidence and emergence angles are $i=e=\\frac{3}{4}\\times60^\\circ=45^\\circ$.\n\nStep 3: The prism relation is $\\delta=i+e-A$.\n\nStep 4: Substituting, $\\delta=45^\\circ+45^\\circ-60^\\circ=30^\\circ$. Option C is correct.",
     "difficulty": "medium",
     "concept": "Prism & Dispersion",
     "year": 2022,
     "est_time_seconds": 60
   },
   {
-    "id": "KCET-PHY-2022-Q21",
+    "id": "RO-KCET-PHY-2022-Q21",
     "question": "A convex lens of focal length $f$ is placed between an object and a screen. The distance between the object and screen is $x$. If the numerical value of the magnification produced by the lens is $m$, find the focal length of the lens.",
     "imageUrl": null,
     "options": [
@@ -299,14 +299,14 @@
       "$\\frac{mx}{(m+1)^2}$"
     ],
     "correctOption": 3,
-    "explanation": "Step 1: Let the object and image distances in magnitude be $u$ and $v$. Then $u+v=x$. Step 2: Magnification gives $m=\\frac{v}{u}$, so $v=mu$. Step 3: Substituting into the distance relation, $u+mu=x$, giving $u=\\frac{x}{m+1}$ and $v=\\frac{mx}{m+1}$. Step 4: Using the lens formula in magnitudes, $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$. Step 5: Substituting and simplifying gives $f=\\frac{mx}{(m+1)^2}$. Option D is correct.",
+    "explanation": "Step 1: Let the object and image distances in magnitude be $u$ and $v$. Then $u+v=x$.\n\nStep 2: Magnification gives $m=\\frac{v}{u}$, so $v=mu$.\n\nStep 3: Substituting into the distance relation, $u+mu=x$, giving $u=\\frac{x}{m+1}$ and $v=\\frac{mx}{m+1}$.\n\nStep 4: Using the lens formula in magnitudes, $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$.\n\nStep 5: Substituting and simplifying gives $f=\\frac{mx}{(m+1)^2}$. Option D is correct.",
     "difficulty": "medium",
     "concept": "Lens Formula & Magnification",
     "year": 2022,
     "est_time_seconds": 90
   },
   {
-    "id": "KCET-PHY-2022-Q22",
+    "id": "RO-KCET-PHY-2022-Q22",
     "question": "The focal length of a convex lens will be maximum for which colour of light?",
     "imageUrl": null,
     "options": [
@@ -316,14 +316,14 @@
       "Blue light"
     ],
     "correctOption": 2,
-    "explanation": "The lens maker's formula shows that focal length increases as the refractive index of the lens material decreases. In normal dispersion, red light has the smallest refractive index among the listed colours because it has the longest wavelength. Therefore, the focal length is maximum for red light. Option C is correct.",
+    "explanation": "The lens maker's formula shows that focal length increases as the refractive index of the lens material decreases. In normal dispersion, red light has the smallest refractive index among the listed colours because it has the longest wavelength.\n\nTherefore, the focal length is maximum for red light. Option C is correct.",
     "difficulty": "easy",
     "concept": "Power of a Lens",
     "year": 2022,
     "est_time_seconds": 40
   },
   {
-    "id": "KCET-PHY-2022-Q23",
+    "id": "RO-KCET-PHY-2022-Q23",
     "question": "A glass slab is silvered on one side and transparent on the other. Its refractive index is $1.5$. A ray of light is incident at an angle of $45^\\circ$ on the transparent side. What is the deviation of the ray from its initial path when it emerges from the slab?",
     "imageUrl": null,
     "options": [
@@ -333,14 +333,14 @@
       "$90^\\circ$"
     ],
     "correctOption": 3,
-    "explanation": "The ray refracts into the glass, reflects from the silvered surface, and then refracts out through the transparent surface. The internal reflection reverses the component of the ray's direction perpendicular to the silvered surface. From the given geometry and the refractive index, the emergent ray is perpendicular to the initial incident direction. Therefore, the deviation is $90^\\circ$. Option D is correct.",
+    "explanation": "The ray refracts into the glass, reflects from the silvered surface, and then refracts out through the transparent surface. The internal reflection reverses the component of the ray's direction perpendicular to the silvered surface. From the given geometry and the refractive index, the emergent ray is perpendicular to the initial incident direction.\n\nTherefore, the deviation is $90^\\circ$. Option D is correct.",
     "difficulty": "medium",
     "concept": "Reflection & Plane Mirrors",
     "year": 2022,
     "est_time_seconds": 75
   },
   {
-    "id": "KCET-PHY-2021-Q24",
+    "id": "RO-KCET-PHY-2021-Q24",
     "question": "In refraction, light waves bend on passing from one medium to another because, in the second medium, the:",
     "imageUrl": null,
     "options": [
@@ -350,14 +350,14 @@
       "Amplitude is smaller"
     ],
     "correctOption": 1,
-    "explanation": "The speed of light changes when it enters a medium with a different refractive index. This change in speed causes the direction of propagation to change at the boundary, producing refraction. The frequency remains unchanged. Therefore, option B is correct.",
+    "explanation": "The speed of light changes when it enters a medium with a different refractive index. This change in speed causes the direction of propagation to change at the boundary, producing refraction. The frequency remains unchanged.\n\nTherefore, option B is correct.",
     "difficulty": "easy",
     "concept": "Refraction & Snell's Law",
     "year": 2021,
     "est_time_seconds": 35
   },
   {
-    "id": "KCET-PHY-2020-Q28",
+    "id": "RO-KCET-PHY-2020-Q28",
     "question": "An object approaches a convergent lens from the left with a uniform speed of $5\\,\\text{m s}^{-1}$ and stops at the focus. The image",
     "imageUrl": null,
     "options": [
@@ -367,14 +367,14 @@
       "Moves towards the lens with a non-uniform acceleration"
     ],
     "correctOption": 2,
-    "explanation": "Step 1: The lens formula relates object and image distances by $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$. Step 2: As the object approaches the focus of a converging lens, the image distance increases and tends towards infinity. Step 3: Differentiating the lens formula shows that image speed depends on the square of the magnification and therefore changes as the object moves. Step 4: The image acceleration also changes because the magnification changes continuously. Thus, the image moves away from the lens with non-uniform acceleration. Option C is correct.",
+    "explanation": "Step 1: The lens formula relates object and image distances by $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$.\n\nStep 2: As the object approaches the focus of a converging lens, the image distance increases and tends towards infinity.\n\nStep 3: Differentiating the lens formula shows that image speed depends on the square of the magnification and therefore changes as the object moves.\n\nStep 4: The image acceleration also changes because the magnification changes continuously. Thus, the image moves away from the lens with non-uniform acceleration. Option C is correct.",
     "difficulty": "hard",
     "concept": "Lens Formula & Magnification",
     "year": 2020,
     "est_time_seconds": 150
   },
   {
-    "id": "KCET-PHY-2020-Q29",
+    "id": "RO-KCET-PHY-2020-Q29",
     "question": "The refracting angle of a prism is $A$ and the refractive index of its material is $\\cot\\left(\\frac{A}{2}\\right)$. The angle of minimum deviation is:",
     "imageUrl": null,
     "options": [
@@ -384,16 +384,16 @@
       "$180^\\circ-2A$"
     ],
     "correctOption": 3,
-    "explanation": "Step 1: At minimum deviation, $\\mu=\\frac{\\sin((A+\\delta_m)/2)}{\\sin(A/2)}$. Step 2: Given $\\mu=\\cot(A/2)=\\frac{\\cos(A/2)}{\\sin(A/2)}$. Step 3: Equating the expressions gives $\\sin((A+\\delta_m)/2)=\\cos(A/2)$. Step 4: Using $\\cos(A/2)=\\sin(90^\\circ-A/2)$, we get $(A+\\delta_m)/2=90^\\circ-A/2$. Step 5: Therefore, $\\delta_m=180^\\circ-2A$. Option D is correct.",
+    "explanation": "Step 1: At minimum deviation, $\\mu=\\frac{\\sin((A+\\delta_m)/2)}{\\sin(A/2)}$.\n\nStep 2: Given $\\mu=\\cot(A/2)=\\frac{\\cos(A/2)}{\\sin(A/2)}$.\n\nStep 3: Equating the expressions gives $\\sin((A+\\delta_m)/2)=\\cos(A/2)$.\n\nStep 4: Using $\\cos(A/2)=\\sin(90^\\circ-A/2)$, we get $(A+\\delta_m)/2=90^\\circ-A/2$.\n\nStep 5: Therefore, $\\delta_m=180^\\circ-2A$. Option D is correct.",
     "difficulty": "hard",
     "concept": "Prism & Dispersion",
     "year": 2020,
     "est_time_seconds": 150
   },
   {
-    "id": "KCET-PHY-2020-Q30",
+    "id": "RO-KCET-PHY-2020-Q30",
     "question": "A beam of light is converging at point P. A concave lens of focal length $16\\,\\text{cm}$ is introduced in its path so that OP becomes the axis of the lens. The beam then converges at a distance $x$ from the lens. Find $x$.",
-    "imageUrl": "/images/KCET-PHY-2020-Q30.png",
+    "imageUrl": "/images/ray-optics/KCET-PHY-2020-Q30.png",
     "options": [
       "12 cm",
       "24 cm",
@@ -401,16 +401,16 @@
       "48 cm"
     ],
     "correctOption": 3,
-    "explanation": "Step 1: The converging beam acts as a virtual object for the concave lens, with object distance $u=+12\\,\\text{cm}$. Step 2: The focal length is $f=-16\\,\\text{cm}$. Step 3: Using the lens formula, $\\frac{1}{v}-\\frac{1}{u}=\\frac{1}{f}$. Step 4: Substituting, $\\frac{1}{v}-\\frac{1}{12}=-\\frac{1}{16}$. Hence, $\\frac{1}{v}=\\frac{1}{12}-\\frac{1}{16}=\\frac{1}{48}$. Step 5: Therefore, $v=48\\,\\text{cm}$ and $x=48\\,\\text{cm}$. Option D is correct.",
+    "explanation": "Step 1: The converging beam acts as a virtual object for the concave lens, with object distance $u=+12\\,\\text{cm}$.\n\nStep 2: The focal length is $f=-16\\,\\text{cm}$.\n\nStep 3: Using the lens formula, $\\frac{1}{v}-\\frac{1}{u}=\\frac{1}{f}$.\n\nStep 4: Substituting, $\\frac{1}{v}-\\frac{1}{12}=-\\frac{1}{16}$. Hence, $\\frac{1}{v}=\\frac{1}{12}-\\frac{1}{16}=\\frac{1}{48}$.\n\nStep 5: Therefore, $v=48\\,\\text{cm}$ and $x=48\\,\\text{cm}$. Option D is correct.",
     "difficulty": "hard",
     "concept": "Lens Formula & Magnification",
     "year": 2020,
     "est_time_seconds": 150
   },
   {
-    "id": "KCET-PHY-2019-Q32",
+    "id": "RO-KCET-PHY-2019-Q32",
     "question": "A point object moves uniformly towards the pole of a concave mirror of focal length $25\\,\\text{cm}$ along its axis at a speed of $1\\,\\text{m s}^{-1}$. At $t=0$, its distance from the mirror is $50\\,\\text{cm}$. Find the average velocity of the image between $t=0$ and $t=0.25\\,\\text{s}$.",
-    "imageUrl": "/images/KCET-PHY-2019-Q32.png",
+    "imageUrl": "/images/ray-optics/KCET-PHY-2019-Q32.png",
     "options": [
       "$40\\,\\text{cm s}^{-1}$",
       "$20\\,\\text{cm s}^{-1}$",
@@ -418,14 +418,14 @@
       "Infinity"
     ],
     "correctOption": 3,
-    "explanation": "Step 1: Initially, the object is at the centre of curvature because $u=-50\\,\\text{cm}$ and $f=-25\\,\\text{cm}$. Thus, the image is also at $v=-50\\,\\text{cm}$. Step 2: In $0.25\\,\\text{s}$, the object moves $s=vt=1\\times0.25=0.25\\,\\text{m}=25\\,\\text{cm}$. Step 3: The object reaches the principal focus, where $u=-25\\,\\text{cm}$. Step 4: At the focus, the image is formed at infinity. Therefore, the image displacement and the average image velocity tend to infinity. Option D is correct.",
+    "explanation": "Step 1: Initially, the object is at the centre of curvature because $u=-50\\,\\text{cm}$ and $f=-25\\,\\text{cm}$. Thus, the image is also at $v=-50\\,\\text{cm}$.\n\nStep 2: In $0.25\\,\\text{s}$, the object moves $s=vt=1\\times0.25=0.25\\,\\text{m}=25\\,\\text{cm}$.\n\nStep 3: The object reaches the principal focus, where $u=-25\\,\\text{cm}$.\n\nStep 4: At the focus, the image is formed at infinity.\n\nTherefore, the image displacement and the average image velocity tend to infinity. Option D is correct.",
     "difficulty": "hard",
     "concept": "Spherical Mirrors (Concave/Convex)",
     "year": 2019,
     "est_time_seconds": 180
   },
   {
-    "id": "KCET-PHY-2019-Q33",
+    "id": "RO-KCET-PHY-2019-Q33",
     "question": "A prism produces a minimum deviation of $38^\\circ$. It produces a deviation of $44^\\circ$ when the angle of incidence is either $42^\\circ$ or $62^\\circ$. What is the angle of incidence when the prism is undergoing minimum deviation?",
     "imageUrl": null,
     "options": [
@@ -435,14 +435,14 @@
       "$60^\\circ$"
     ],
     "correctOption": 2,
-    "explanation": "Step 1: For the same deviation, the two possible incidence angles are $42^\\circ$ and $62^\\circ$. Step 2: The prism relation is $\\delta=i+e-A$. Thus, $A=42^\\circ+62^\\circ-44^\\circ=60^\\circ$. Step 3: At minimum deviation, the incidence angle is $i_m=\\frac{A+\\delta_m}{2}$. Step 4: Substituting, $i_m=\\frac{60^\\circ+38^\\circ}{2}=49^\\circ$. Option C is correct.",
+    "explanation": "Step 1: For the same deviation, the two possible incidence angles are $42^\\circ$ and $62^\\circ$.\n\nStep 2: The prism relation is $\\delta=i+e-A$. Thus, $A=42^\\circ+62^\\circ-44^\\circ=60^\\circ$.\n\nStep 3: At minimum deviation, the incidence angle is $i_m=\\frac{A+\\delta_m}{2}$.\n\nStep 4: Substituting, $i_m=\\frac{60^\\circ+38^\\circ}{2}=49^\\circ$. Option C is correct.",
     "difficulty": "hard",
     "concept": "Prism & Dispersion",
     "year": 2019,
     "est_time_seconds": 150
   },
   {
-    "id": "KCET-PHY-2018-Q34",
+    "id": "RO-KCET-PHY-2018-Q34",
     "question": "An object is placed at the principal focus of a convex mirror. The image will be formed at:",
     "imageUrl": null,
     "options": [
@@ -452,14 +452,14 @@
       "No image will be formed"
     ],
     "correctOption": 2,
-    "explanation": "Using the mirror formula, $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$. For the stated condition, the object distance is taken equal to the focal distance in magnitude. Substituting gives $\\frac{1}{v}=0$, so $v=\\infty$. Therefore, option C is correct.",
+    "explanation": "Using the mirror formula, $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$. For the stated condition, the object distance is taken equal to the focal distance in magnitude. Substituting gives $\\frac{1}{v}=0$, so $v=\\infty$.\n\nTherefore, option C is correct.",
     "difficulty": "easy",
     "concept": "Spherical Mirrors (Concave/Convex)",
     "year": 2018,
     "est_time_seconds": 40
   },
   {
-    "id": "KCET-PHY-2018-Q35",
+    "id": "RO-KCET-PHY-2018-Q35",
     "question": "An object is placed at a distance of $20\\,\\text{cm}$ from the pole of a concave mirror of focal length $10\\,\\text{cm}$. Find the distance of the image formed.",
     "imageUrl": null,
     "options": [
@@ -469,14 +469,14 @@
       "$-10\\,\\text{cm}$"
     ],
     "correctOption": 2,
-    "explanation": "Step 1: Using the Cartesian sign convention, $u=-20\\,\\text{cm}$ and $f=-10\\,\\text{cm}$. Step 2: Apply the mirror formula $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$. Step 3: Substituting, $-\\frac{1}{10}=-\\frac{1}{20}+\\frac{1}{v}$. Step 4: Therefore, $\\frac{1}{v}=-\\frac{1}{20}$, giving $v=-20\\,\\text{cm}$. Option C is correct.",
+    "explanation": "Step 1: Using the Cartesian sign convention, $u=-20\\,\\text{cm}$ and $f=-10\\,\\text{cm}$.\n\nStep 2: Apply the mirror formula $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$.\n\nStep 3: Substituting, $-\\frac{1}{10}=-\\frac{1}{20}+\\frac{1}{v}$.\n\nStep 4: Therefore, $\\frac{1}{v}=-\\frac{1}{20}$, giving $v=-20\\,\\text{cm}$. Option C is correct.",
     "difficulty": "easy",
     "concept": "Spherical Mirrors (Concave/Convex)",
     "year": 2018,
     "est_time_seconds": 45
   },
   {
-    "id": "KCET-PHY-2018-Q36",
+    "id": "RO-KCET-PHY-2018-Q36",
     "question": "A candle placed $25\\,\\text{cm}$ from a lens forms an image on a screen placed $75\\,\\text{cm}$ on the other side of the lens. Find the focal length and type of lens.",
     "imageUrl": null,
     "options": [
@@ -486,14 +486,14 @@
       "$-20.25\\,\\text{cm}$ and convex lens"
     ],
     "correctOption": 0,
-    "explanation": "Step 1: The object distance is $u=-25\\,\\text{cm}$ and the real image distance is $v=+75\\,\\text{cm}$. Step 2: Apply the lens formula $\\frac{1}{f}=\\frac{1}{v}-\\frac{1}{u}$. Step 3: Substituting, $\\frac{1}{f}=\\frac{1}{75}-\\left(-\\frac{1}{25}\\right)=\\frac{1}{75}+\\frac{3}{75}=\\frac{4}{75}$. Step 4: Therefore, $f=\\frac{75}{4}=18.75\\,\\text{cm}$. The positive focal length indicates a convex lens. Option A is correct.",
+    "explanation": "Step 1: The object distance is $u=-25\\,\\text{cm}$ and the real image distance is $v=+75\\,\\text{cm}$.\n\nStep 2: Apply the lens formula $\\frac{1}{f}=\\frac{1}{v}-\\frac{1}{u}$.\n\nStep 3: Substituting, $\\frac{1}{f}=\\frac{1}{75}-\\left(-\\frac{1}{25}\\right)=\\frac{1}{75}+\\frac{3}{75}=\\frac{4}{75}$.\n\nStep 4: Therefore, $f=\\frac{75}{4}=18.75\\,\\text{cm}$. The positive focal length indicates a convex lens. Option A is correct.",
     "difficulty": "medium",
     "concept": "Lens Formula & Magnification",
     "year": 2018,
     "est_time_seconds": 60
   },
   {
-    "id": "KCET-PHY-2017-Q38",
+    "id": "RO-KCET-PHY-2017-Q38",
     "question": "A linear object of height $10\\,\\text{cm}$ is placed in front of a concave mirror of radius of curvature $15\\,\\text{cm}$, at a distance of $10\\,\\text{cm}$. The image formed is:",
     "imageUrl": null,
     "options": [
@@ -503,7 +503,7 @@
       "Diminished and inverted"
     ],
     "correctOption": 1,
-    "explanation": "Step 1: The focal length is $f=\\frac{R}{2}=\\frac{15}{2}=7.5\\,\\text{cm}$ in magnitude. Using the Cartesian convention, $f=-7.5\\,\\text{cm}$ and $u=-10\\,\\text{cm}$. Step 2: Apply the mirror formula, $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$. Step 3: Substituting, $-\\frac{1}{7.5}=-\\frac{1}{10}+\\frac{1}{v}$, which gives $v=-30\\,\\text{cm}$. Step 4: Magnification is $m=-\\frac{v}{u}=-3$. The negative sign indicates an inverted image, and the magnitude greater than one indicates magnification. Therefore, option B is correct.",
+    "explanation": "Step 1: The focal length is $f=\\frac{R}{2}=\\frac{15}{2}=7.5\\,\\text{cm}$ in magnitude. Using the Cartesian convention, $f=-7.5\\,\\text{cm}$ and $u=-10\\,\\text{cm}$.\n\nStep 2: Apply the mirror formula, $\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}$.\n\nStep 3: Substituting, $-\\frac{1}{7.5}=-\\frac{1}{10}+\\frac{1}{v}$, which gives $v=-30\\,\\text{cm}$.\n\nStep 4: Magnification is $m=-\\frac{v}{u}=-3$. The negative sign indicates an inverted image, and the magnitude greater than one indicates magnification.\n\nTherefore, option B is correct.",
     "difficulty": "hard",
     "concept": "Spherical Mirrors (Concave/Convex)",
     "year": 2017,

@@ -1,0 +1,189 @@
+[
+  {
+    "id": "MS-KCET-PHY-2026-Q1",
+    "question": "A car covers the first half of the distance between two places at $40\\,\\text{km/h}$ and another half at $50\\,\\text{km/h}$. The average speed of the car is",
+    "imageUrl": null,
+    "options": [
+      "$45.00\\,\\text{km/h}$",
+      "$44.44\\,\\text{km/h}$",
+      "$43.14\\,\\text{km/h}$",
+      "$42.04\\,\\text{km/h}$"
+    ],
+    "correctOption": 1,
+    "explanation": "Let the total distance be $2d$ km. Time for first half = $\\frac{d}{40}$; time for second half = $\\frac{d}{50}$. Average speed = $\\frac{2d}{\\frac{d}{40} + \\frac{d}{50}} = \\frac{2}{\\frac{1}{40} + \\frac{1}{50}} = \\frac{2}{\\frac{90}{2000}} = \\frac{4000}{90} = 44.44\\,\\text{km/h}$.",
+    "difficulty": "easy",
+    "concept": "Distance, Displacement & Average Velocity",
+    "year": 2026,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MS-KCET-PHY-2026-Q2",
+    "question": "The velocity of a particle moving along x-axis is given as $v = x^{2} - 5x + 4$ (in m/s) where $x$ denotes the x-coordinate of the particle in metres. The magnitude of the acceleration of the particle when the velocity of the particle is zero is",
+    "imageUrl": null,
+    "options": [
+      "$2\\,\\text{m/s}^2$",
+      "$3\\,\\text{m/s}^2$",
+      "Zero",
+      "$1\\,\\text{m/s}^2$"
+    ],
+    "correctOption": 2,
+    "explanation": "Velocity becomes zero when $x^{2} - 5x + 4 = 0$, i.e. $x = 1$ or $x = 4$. Since $v$ is given as a function of $x$, use the chain rule: $a = \\frac{dv}{dt} = \\frac{dv}{dx}\\cdot\\frac{dx}{dt} = v\\frac{dv}{dx}$. When $v = 0$, $a = 0 \\times \\frac{dv}{dx} = 0$. Hence, the magnitude of acceleration is zero.",
+    "difficulty": "medium",
+    "concept": "Calculus in Kinematics",
+    "year": 2026,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "MS-KCET-PHY-2025-Q3",
+    "question": "Two stones begin to fall from rest from the same height, with the second stone starting to fall '$\\Delta t$' seconds after the first falls from rest. The distance of separation between the two stones becomes 'H', $t_0$ seconds after the first stone starts its motion. Then $t_0$ is equal to",
+    "imageUrl": null,
+    "options": [
+      "$\\frac{H}{\\Delta t} + \\frac{\\Delta t}{2g}$",
+      "$\\frac{H}{g\\Delta t} - \\frac{\\Delta t}{2}$",
+      "$\\frac{H}{g\\Delta t} + \\frac{\\Delta t}{2}$",
+      "$\\frac{H}{g\\Delta t}$"
+    ],
+    "correctOption": 2,
+    "explanation": "First stone falls for $t_0$: $S_1 = \\frac{1}{2}gt_0^2$. Second stone falls for $(t_0 - \\Delta t)$: $S_2 = \\frac{1}{2}g(t_0 - \\Delta t)^2$. Separation $H = S_1 - S_2 = \\frac{g}{2}(2t_0\\Delta t - \\Delta t^2) = g\\left(t_0\\Delta t - \\frac{1}{2}\\Delta t^2\\right)$. So $t_0\\Delta t = \\frac{H}{g} + \\frac{\\Delta t^2}{2}$, which gives $t_0 = \\frac{H}{g\\Delta t} + \\frac{\\Delta t}{2}$.",
+    "difficulty": "medium",
+    "concept": "Kinematic Equations (Uniform Acceleration)",
+    "year": 2025,
+    "est_time_seconds": 90
+  },
+  {
+    "id": "MS-KCET-PHY-2023-Q4",
+    "question": "A body is moving along a straight line with initial velocity $v_0$. Its acceleration $a$ is constant. After $t$ seconds, its velocity becomes $v$. The average velocity of the body over the given time interval is",
+    "imageUrl": null,
+    "options": [
+      "$\\bar{v} = \\frac{v^2 - v_0^2}{at}$",
+      "$\\bar{v} = \\frac{v^2 + v_0^2}{2at}$",
+      "$\\bar{v} = \\frac{v^2 + v_0^2}{at}$",
+      "$\\bar{v} = \\frac{v^2 - v_0^2}{2at}$"
+    ],
+    "correctOption": 3,
+    "explanation": "Displacement from $v^2 = v_0^2 + 2as$ gives $s = \\frac{v^2 - v_0^2}{2a}$. Average velocity $\\bar{v} = \\frac{s}{t} = \\frac{v^2 - v_0^2}{2at}$.",
+    "difficulty": "medium",
+    "concept": "Kinematic Equations (Uniform Acceleration)",
+    "year": 2023,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MS-KCET-PHY-2022-Q5",
+    "question": "The displacement $x$ (in m) of a particle of mass $m$ (in kg) moving in one dimension under the action of a force, is related to time $t$ (in sec) by $t = \\sqrt{x} + 3$. The displacement of the particle when its velocity is zero, will be",
+    "imageUrl": null,
+    "options": [
+      "zero",
+      "$6\\,\\text{m}$",
+      "$2\\,\\text{m}$",
+      "$4\\,\\text{m}$"
+    ],
+    "correctOption": 0,
+    "explanation": "From $t = \\sqrt{x} + 3$, we get $\\sqrt{x} = t - 3$, so $x = (t - 3)^2 = t^2 - 6t + 9$. Velocity $v = \\frac{dx}{dt} = 2t - 6$. $v = 0$ when $t = 3\\,\\text{s}$. At $t = 3$, $x = 3^2 - 6(3) + 9 = 0\\,\\text{m}$.",
+    "difficulty": "medium",
+    "concept": "Calculus in Kinematics",
+    "year": 2022,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "MS-KCET-PHY-2021-Q6",
+    "question": "For a body moving along a straight line, the following v-t graph is obtained. According to the graph, the displacement during",
+    "imageUrl": "/images/motion-straight-line/KCET-PHY-2021-Q6.png",
+    "options": [
+      "uniform acceleration is greater than that during uniform motion",
+      "uniform acceleration is less than that during uniform motion",
+      "uniform acceleration is equal to that during uniform motion",
+      "uniform motion is zero"
+    ],
+    "correctOption": 1,
+    "explanation": "Area under the v-t graph equals displacement. In the graph, the uniform-acceleration part is a trapezium (the body already has some velocity at $t=0$) that lasts for a shorter time and has lower velocities than the uniform-motion part, which is a rectangle. So the area under the uniform-motion part is larger. Hence, displacement during uniform acceleration is less than that during uniform motion.",
+    "difficulty": "easy",
+    "concept": "Kinematic Graphs (x-t, v-t, a-t)",
+    "year": 2021,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MS-KCET-PHY-2021-Q7",
+    "question": "A particle starts from rest. Its acceleration $a$ versus time $t$ is shown in the figure. The maximum speed of the particle will be",
+    "imageUrl": "/images/motion-straight-line/KCET-PHY-2021-Q7.png",
+    "options": [
+      "$80\\,\\text{m s}^{-1}$",
+      "$40\\,\\text{m s}^{-1}$",
+      "$18\\,\\text{m s}^{-1}$",
+      "$2\\,\\text{m s}^{-1}$"
+    ],
+    "correctOption": 1,
+    "explanation": "The acceleration falls linearly from $8\\,\\text{m/s}^2$ at $t=0$ to $0$ at $t=10\\,\\text{s}$ and is never negative, so speed keeps increasing until $t=10\\,\\text{s}$. Area under the a-t graph equals change in velocity ($v - u$). $\\frac{1}{2} \\times 8 \\times 10 = v - 0$. So $v = 40\\,\\text{m/s}$.",
+    "difficulty": "easy",
+    "concept": "Kinematic Graphs (x-t, v-t, a-t)",
+    "year": 2021,
+    "est_time_seconds": 40
+  },
+  {
+    "id": "MS-KCET-PHY-2020-Q8",
+    "question": "At a metro station, a girl walks up a stationary escalator in $20\\,\\text{s}$. If she remains stationary on the escalator, then the escalator takes her up in $30\\,\\text{s}$. The time taken by her to walk up on the moving escalator will be",
+    "imageUrl": null,
+    "options": [
+      "$25\\,\\text{s}$",
+      "$60\\,\\text{s}$",
+      "$12\\,\\text{s}$",
+      "$10\\,\\text{s}$"
+    ],
+    "correctOption": 2,
+    "explanation": "Let $v_g = \\frac{d}{20}$ (girl's speed) and $v_e = \\frac{d}{30}$ (escalator's speed). Combined speed on moving escalator: $v = v_g + v_e = \\frac{d}{20} + \\frac{d}{30} = \\frac{d}{12}$. Time = $\\frac{d}{v} = 12\\,\\text{s}$.",
+    "difficulty": "easy",
+    "concept": "Distance, Displacement & Average Velocity",
+    "year": 2020,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MS-KCET-PHY-2019-Q9",
+    "question": "The given graph shows the variation of velocity $v$ with position $x$ for a particle moving along a straight line. Which of the following graphs shows the variation of acceleration $a$ with position $x$?",
+    "imageUrl": "/images/motion-straight-line/KCET-PHY-2019-Q9.png",
+    "options": [
+      "Graph A",
+      "Graph B",
+      "Graph C",
+      "Graph D"
+    ],
+    "correctOption": 2,
+    "explanation": "From the v-x graph, $v = -kx + b$ (a straight line with negative slope). Acceleration $a = \\frac{dv}{dt} = \\frac{dv}{dx}\\cdot v = (-k)(-kx + b) = k^2x - kb$. This is a straight line with positive slope $k^2$ and negative intercept $-kb$, crossing the x-axis at $x = b/k$. Graph C matches this.",
+    "difficulty": "hard",
+    "concept": "Kinematic Graphs (x-t, v-t, a-t)",
+    "year": 2019,
+    "est_time_seconds": 150
+  },
+  {
+    "id": "MS-KCET-PHY-2018-Q10",
+    "question": "A particle shows distance-time curve as shown in the figure. The maximum instantaneous velocity of the particle is around the point",
+    "imageUrl": "/images/motion-straight-line/KCET-PHY-2018-Q10.png",
+    "options": [
+      "P",
+      "S",
+      "R",
+      "Q"
+    ],
+    "correctOption": 3,
+    "explanation": "Instantaneous velocity is the slope of the x-t graph ($\\frac{dx}{dt}$). The slope is greatest in the region QR (the curve bends upward after Q) and least near S, where the curve flattens. Hence, instantaneous velocity is maximum around Q.",
+    "difficulty": "easy",
+    "concept": "Kinematic Graphs (x-t, v-t, a-t)",
+    "year": 2018,
+    "est_time_seconds": 40
+  },
+  {
+    "id": "MS-KCET-PHY-2017-Q11",
+    "question": "A car moving with a velocity of $20\\,\\text{m/s}$ stopped at a distance of $40\\,\\text{m}$. If the same car is travelling at double the velocity, the distance travelled by it for same retardation is",
+    "imageUrl": null,
+    "options": [
+      "$320\\,\\text{m}$",
+      "$1280\\,\\text{m}$",
+      "$160\\,\\text{m}$",
+      "$640\\,\\text{m}$"
+    ],
+    "correctOption": 2,
+    "explanation": "From $v^2 = u^2 + 2as$ with $v = 0$: $-u^2 = 2as$. Since $a$ is constant, $s \\propto u^2$. If $u$ doubles, $s$ quadruples. Original $s = 40\\,\\text{m}$ at $u = 20$; new $s = 4 \\times 40 = 160\\,\\text{m}$ at $u = 40$.",
+    "difficulty": "easy",
+    "concept": "Kinematic Equations (Uniform Acceleration)",
+    "year": 2017,
+    "est_time_seconds": 45
+  }
+]

@@ -12,7 +12,7 @@ export function DiagnosisPills({ summary }: DiagnosisPillsProps) {
     { label: 'Needs Practice', tag: 'NEEDS_CONFIDENCE', emoji: '💪', className: 'bg-warning text-warning-foreground border-warning-border' },
     { label: 'Lucky Guess', tag: 'LUCKY_GUESS', emoji: '🍀', className: 'bg-warning text-warning-foreground border-warning-border' },
     { label: 'Mastered', tag: 'MASTERED', emoji: '✅', className: 'bg-success text-success-foreground border-success-border' },
-    { label: 'Marked Skipped', tag: 'MARKED_SKIPPED', emoji: '⏳', className: 'bg-warning text-warning-foreground border-warning-border' },
+    { label: 'Marked Skipped', tag: 'MARKED_SKIPPED', emoji: '⏳', className: 'bg-muted text-muted-foreground border-border' },
     { label: 'Unattempted', tag: 'UNATTEMPTED', emoji: '⬜', className: 'bg-muted text-muted-foreground border-border' },
   ];
 

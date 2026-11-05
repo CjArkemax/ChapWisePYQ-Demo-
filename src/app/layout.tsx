@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ray Optics — Chapter Test",
+  title: "ChapWisePYQ(demo)",
   description: "Class 12 Physics • 30 Questions • ~30–40 min",
 };
 

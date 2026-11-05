@@ -171,3 +171,84 @@ export function severityMeta(sev: Severity) {
       return { label: 'UNATTEMPTED', emoji: '⬜', colorClass: 'border-l-muted-foreground' };
   }
 }
+
+
+export interface ReviewItem {
+  questionNumber: number;
+  questionId: string;
+  question: Question;
+  selectedOption: number | null;
+  correctOption: number;
+  diagnosisTag: DiagnosisTag;
+  diagnosisLabel: string;
+  diagnosisEmoji: string;
+  timeOnQuestionMs: number;
+  estTimeSeconds: number;
+  concept: ConceptTag;
+  isCorrect: boolean | null;
+  isMarkedForReview: boolean;
+}
+
+export function labelFor(tag: DiagnosisTag): string {
+  switch (tag) {
+    case 'BLIND_GUESS': return 'Blind Guess';
+    case 'MISCONCEPTION': return 'Misconception Detected';
+    case 'CONCEPT_GAP': return 'Concept Gap';
+    case 'LUCKY_GUESS': return 'Lucky Guess';
+    case 'NEEDS_CONFIDENCE': return 'Needs Confidence Practice';
+    case 'MASTERED': return 'Mastered';
+    case 'MARKED_SKIPPED': return 'Marked for Review (Skipped)';
+    case 'UNATTEMPTED': return 'Unattempted';
+  }
+}
+
+export function emojiFor(tag: DiagnosisTag): string {
+  switch (tag) {
+    case 'BLIND_GUESS': return '🚨';
+    case 'MISCONCEPTION': return '🧠';
+    case 'CONCEPT_GAP': return '📖';
+    case 'LUCKY_GUESS': return '🍀';
+    case 'NEEDS_CONFIDENCE': return '💪';
+    case 'MASTERED': return '✅';
+    case 'MARKED_SKIPPED': return '⏳';
+    case 'UNATTEMPTED': return '⬜';
+  }
+}
+
+export function getReviewItem(
+  questions: Question[],
+  answers: Record<string, AnswerState>,
+  index: number,
+): ReviewItem {
+  const q = questions[index];
+  if (!q) {
+    throw new Error(
+      `getReviewItem: index ${index} out of bounds (length=${questions.length})`,
+    );
+  }
+
+  const a = answers[q.id];
+  const isCorrect =
+    a?.selectedOption != null ? a.selectedOption === q.correctOption : null;
+  const tag = getDiagnosisTag(
+    isCorrect,
+    a?.selfReport ?? null,
+    a?.isMarkedForReview ?? false,
+  );
+
+  return {
+    questionNumber: index + 1,
+    questionId: q.id,
+    question: q,
+    selectedOption: a?.selectedOption ?? null,
+    correctOption: q.correctOption,
+    diagnosisTag: tag,
+    diagnosisLabel: labelFor(tag),
+    diagnosisEmoji: emojiFor(tag),
+    timeOnQuestionMs: a?.timeOnQuestionMs ?? 0,
+    estTimeSeconds: q.est_time_seconds,
+    concept: q.concept,
+    isCorrect,
+    isMarkedForReview: a?.isMarkedForReview ?? false,
+  };
+}
