@@ -23,13 +23,25 @@ export const CHAPTERS: Chapter[] = [
     title: 'Motion in a Straight Line',
     jsonPath: '/motion-straight-line.json',
     timeLimitMinutes: 15,
-    commingSoon: true, // not yet available
+    // commingSoon: true, // not yet available
   },
   {
     id: 'electrostatics',
     title: 'Electrostatics',
     jsonPath: '/electrostatics.json',
     timeLimitMinutes: 35,
+  },
+  { 
+    id: 'matrices', 
+    title: 'Matrices', 
+    jsonPath: '/matrices.json', 
+    timeLimitMinutes: 42 
+  },
+  { 
+    id: 'determinants', 
+    title: 'Determinants', 
+    jsonPath: '/determinants.json', 
+    timeLimitMinutes: 40 
   },
 ];
 

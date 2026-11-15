@@ -13,7 +13,9 @@ const chapterMeta: Record<
 > = {
   'ray-optics': { desc: 'Class 12 Physics', questions: 30, difficulty: 'Medium' },
   'motion-straight-line': { desc: 'Class 11 Physics', questions: 11, difficulty: 'Easy–Medium' },
-  electrostatics: { desc: 'Class 12 Physics', questions: 30, difficulty: 'Medium' },
+  'electrostatics': { desc: 'Class 12 Physics', questions: 30, difficulty: 'Medium' },
+  'matrices': { desc: 'Class 12 Mathematics', questions: 35, difficulty: 'Medium' },
+  'determinants': { desc: 'Class 12 Mathematics', questions: 30, difficulty: 'Medium-Hard' },
 };
 
 export default function ChaptersPage() {

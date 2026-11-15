@@ -38,7 +38,7 @@ export function QuestionCard({
         <span className='ml-auto'>[ {question.year} ]</span>
       </div>
 
-      <div className="text-lg leading-relaxed mb-6">
+      <div className="text-lg leading-relaxed mb-6 whitespace-pre-wrap">
         <MathText>{question.question}</MathText>
       </div>
 

@@ -292,7 +292,7 @@ export default function HomePage() {
               <Heart className="h-3.5 w-3.5 text-danger-foreground" />
             </p>
             <p className="text-label text-subtle-foreground">
-              © {new Date().getFullYear()} Ray Optics Pilot. All rights reserved. <span className="font-bold text-foreground">| By Dinesh Chavan</span>
+              © {new Date().getFullYear()} ChapWisePYQ. All rights reserved. <span className="font-bold text-foreground">| By Dinesh Chavan</span>
             </p>
           </div>
         </div>

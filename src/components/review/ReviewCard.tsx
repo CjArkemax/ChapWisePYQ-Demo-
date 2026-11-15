@@ -24,7 +24,7 @@ export function ReviewCard({ item }: { item: ReviewItem }) {
       </div>
 
 
-      <div className="text-lg leading-relaxed mb-6">
+      <div className="text-lg leading-relaxed whitespace-pre-wrap mb-6">
         <MathText>{question.question}</MathText>
       </div>
       <DiagnosisTagLine item={item} />

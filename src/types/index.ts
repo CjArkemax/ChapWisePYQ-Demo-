@@ -2,16 +2,7 @@ export type SelfReport = 'sure' | 'unsure' | 'guess' | null;
 
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
-export type ConceptTag = 
-  | 'Reflection & Plane Mirrors'
-  | 'Spherical Mirrors (Concave/Convex)'
-  | 'Refraction & Snell\'s Law'
-  | 'Total Internal Reflection'
-  | 'Prism & Dispersion'
-  | 'Lens Formula & Magnification'
-  | 'Power of a Lens'
-  | 'Optical Instruments'
-  | 'Refraction at Spherical Surfaces';
+export type ConceptTag = string
 
 export type DiagnosisTag = 
   | 'BLIND_GUESS'         // Case 1: Wrong, Guess

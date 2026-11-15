@@ -1,0 +1,597 @@
+[
+  {
+    "id": "MA-KCET-MAT-2026-Q4",
+    "question": "Match List-I with List-II.\n\nList-I: (a) A matrix which is not a square matrix, (b) A square matrix $A$ with $A = A'$, (c) The diagonal elements of a diagonal matrix are same, (d) A matrix which is both symmetric and skew symmetric.\n\nList-II: (i) Symmetric matrix, (ii) Null matrix, (iii) Rectangular matrix, (iv) Scalar matrix.",
+    "imageUrl": "/images/matrices/MA-KCET-MAT-2026-Q4.png",
+    "options": [
+      "a-iii, b-i, c-ii, d-iv",
+      "a-iii, b-ii, c-iv, d-i",
+      "a-iii, b-i, c-iv, d-ii",
+      "a-iii, b-iv, c-i, d-ii"
+    ],
+    "correctOption": 2,
+    "explanation": "We match each description with the matrix type it defines.\n\n(a) A matrix that is not square has a different number of rows and columns. Such a matrix is called a rectangular matrix. Therefore, (a) → (iii).\n\n(b) The notation A' denotes the transpose of A. A square matrix satisfying A' = A is, by definition, a symmetric matrix. Therefore, (b) → (i).\n\n(c) A diagonal matrix has zero entries everywhere except possibly on its principal diagonal. If all entries on that diagonal are equal, the matrix is a scalar matrix. Therefore, (c) → (iv).\n\n(d) If a matrix is both symmetric and skew-symmetric, then A' = A and A' = -A. Equating these gives A = -A, so 2A = 0. Over the real numbers, this means A is the null matrix. Therefore, (d) → (ii).\n\nThe complete matching is a-iii, b-i, c-iv, d-ii, which is option C.",
+    "difficulty": "easy",
+    "concept": "Types of Matrices",
+    "year": 2026,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2026-Q5",
+    "question": "Consider the following statements:\n\nStatement I: If $A$ is a non-singular matrix, then $A^{-1}$ exists.\n\nStatement II: If $A$ and $B$ are symmetric matrices of same order, then $(AB - BA)$ is a skew symmetric matrix.",
+    "imageUrl": null,
+    "options": [
+      "Statement I is true and Statement II is false",
+      "Statement I is false and Statement II is false",
+      "Statement I is true and Statement II is true",
+      "Statement I is false and Statement II is true"
+    ],
+    "correctOption": 2,
+    "explanation": "Statement I: A square matrix is non-singular precisely when its determinant is non-zero.\n\nFor a square matrix A, the inverse exists if and only if |A| ≠ 0. Hence Statement I is true.\n\nStatement II: Since A and B are symmetric, A' = A and B' = B.\n\nUsing the transpose rule (XY)' = Y'X':\n\n(AB - BA)' = (AB)' - (BA)' = B'A' - A'B'\n\nSubstitute A' = A and B' = B:\n\n(AB - BA)' = BA - AB = -(AB - BA)\n\nA matrix X is skew-symmetric when X' = -X. Therefore, AB - BA is skew-symmetric, and Statement II is true.\n\nBoth statements are true. The correct answer is option C.",
+    "difficulty": "medium",
+    "concept": "Transpose & Symmetric / Skew-Symmetric Matrices",
+    "year": 2026,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "MA-KCET-MAT-2026-Q6",
+    "question": "A row matrix has only",
+    "imageUrl": null,
+    "options": [
+      "One element",
+      "One row with one or more columns",
+      "One column with one or more rows",
+      "One row and one column"
+    ],
+    "correctOption": 1,
+    "explanation": "A row matrix is a matrix that contains exactly one row and one or more columns. Its order is 1 × n, where n is a positive integer.\n\nFor example, [2  5  -1] is a row matrix of order 1 × 3.\n\nOption A is incorrect because a row matrix does not have to contain only one element. Option C describes a column matrix, which has exactly one column. Option D describes only the special 1 × 1 case.\n\nTherefore, the correct answer is option B.",
+    "difficulty": "easy",
+    "concept": "Types of Matrices",
+    "year": 2026,
+    "est_time_seconds": 25
+  },
+  {
+    "id": "MA-KCET-MAT-2026-Q7",
+    "question": "Let $X$ be a matrix of order $2 \\times n$ and $Z$ be a matrix of order $2 \\times p$. If $n = p$, then the order of the matrix $8X - 9Z$ is:",
+    "imageUrl": null,
+    "options": [
+      "$2 \\times n$",
+      "$p \\times 2$",
+      "$n \\times 3$",
+      "$p \\times n$"
+    ],
+    "correctOption": 0,
+    "explanation": "Matrix addition and subtraction are defined only when the two matrices have the same order.\n\nX has order 2 × n, so scalar multiplication does not change its order: 8X is also 2 × n.\n\nZ has order 2 × p. Since n = p, Z also has order 2 × n, and therefore 9Z has order 2 × n.\n\nBoth matrices being subtracted have the same order. Their difference consequently has that same order.\n\nThus, the order of 8X - 9Z is 2 × n. The correct answer is option A.",
+    "difficulty": "easy",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2026,
+    "est_time_seconds": 30
+  },
+  {
+    "id": "MA-KCET-MAT-2026-Q8",
+    "question": "If $A$ and $B$ are invertible matrices of same order, then which of the following is not correct?",
+    "imageUrl": null,
+    "options": [
+      "$A \\cdot (\\text{adj}\\,A) = (\\text{adj}\\,A) \\cdot A = AI$",
+      "$A \\cdot (\\text{adj}\\,A) = (\\text{adj}\\,A) \\cdot A = |A|I$",
+      "$(AB)^{-1} = B^{-1}A^{-1}$",
+      "$|A| \\neq 0, |B| \\neq 0$"
+    ],
+    "correctOption": 0,
+    "explanation": "For any square matrix A, the fundamental adjoint identity is:\n\nA(adj A) = (adj A)A = |A|I\n\nHere, |A| denotes the determinant of A and I is the identity matrix of the same order.\n\nOption B states this identity correctly.\n\nOption A gives AI instead of |A|I. Since AI = A, this would claim that A(adj A) = A, which is not true for a general invertible matrix. Invertibility only guarantees that |A| is non-zero; it does not make the determinant equal to 1.\n\nOption C is correct because the inverse of a product reverses the order:\n\n(AB)^-1 = B^-1 A^-1\n\nOption D is also correct because an invertible matrix has a non-zero determinant.\n\nTherefore, the statement that is not correct is option A.",
+    "difficulty": "medium",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2026,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MA-KCET-MAT-2025-Q10",
+    "question": "If $A$ is a square matrix such that $A^2 = A$, then $(I - A)^3$ is",
+    "imageUrl": null,
+    "options": [
+      "$I - A$",
+      "$A - I$",
+      "$I + A$",
+      "$-I - A$"
+    ],
+    "correctOption": 0,
+    "explanation": "We are given A² = A. A matrix satisfying this property is called idempotent.\n\nExpand the expression using the binomial theorem. Since I commutes with every square matrix:\n\n(I - A)³ = I - 3A + 3A² - A³\n\nFrom A² = A, multiply both sides by A to obtain A³ = A² = A.\n\nSubstitute A² = A and A³ = A:\n\n(I - A)³ = I - 3A + 3A - A\n\nThe middle terms cancel, leaving:\n\n(I - A)³ = I - A\n\nTherefore, the correct answer is option A.",
+    "difficulty": "medium",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2025,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MA-KCET-MAT-2025-Q11",
+    "question": "If $A$ and $B$ are two matrices such that $AB$ is an identity matrix and the order of matrix $B$ is $3 \\times 4$, then the order of matrix $A$ is",
+    "imageUrl": null,
+    "options": [
+      "$3 \\times 3$",
+      "$4 \\times 4$",
+      "$4 \\times 3$",
+      "$3 \\times 4$"
+    ],
+    "correctOption": 2,
+    "explanation": "Let A have order m × n. We are given that B has order 3 × 4.\n\nFor the product AB to be defined, the number of columns of A must equal the number of rows of B. Hence n = 3.\n\nThe order of AB is therefore m × 4.\n\nSince AB is an identity matrix, it must be square. Thus m = 4.\n\nCombining m = 4 and n = 3, the order of A is 4 × 3.\n\nTherefore, the correct answer is option C.",
+    "difficulty": "easy",
+    "concept": "Matrix Multiplication & Properties",
+    "year": 2025,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2025-Q12",
+    "question": "Which of the following statements is not correct?",
+    "imageUrl": null,
+    "options": [
+      "A row matrix has only one row",
+      "A diagonal matrix has all diagonal elements equal to zero",
+      "A symmetric matrix $A$ is a square matrix satisfying $A' = A$",
+      "A skew symmetric matrix has all diagonal elements equal to zero"
+    ],
+    "correctOption": 1,
+    "explanation": "A diagonal matrix is a square matrix in which every off-diagonal entry is zero. Its diagonal entries may be zero or non-zero; they do not have to be zero.\n\nFor example, [[2, 0], [0, 5]] is a diagonal matrix, even though both diagonal entries are non-zero. The null matrix is a special diagonal matrix, but not every diagonal matrix is a null matrix.\n\nOption A is correct because a row matrix has exactly one row.\n\nOption C is the definition of a symmetric matrix.\n\nOption D is correct because for a skew-symmetric matrix A, A' = -A. Each diagonal entry must therefore equal its own negative, which forces every diagonal entry to be zero.\n\nThus, the incorrect statement is option B.",
+    "difficulty": "easy",
+    "concept": "Types of Matrices",
+    "year": 2025,
+    "est_time_seconds": 30
+  },
+  {
+    "id": "MA-KCET-MAT-2025-Q13",
+    "question": "If $A = \\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix}$ satisfies $A^6 = kA'$, then the value of $k$ is",
+    "imageUrl": null,
+    "options": [
+      "32",
+      "1",
+      "$\\frac{1}{32}$",
+      "6"
+    ],
+    "correctOption": 0,
+    "explanation": "The given matrix is:\n\nA = [[1, 1], [1, 1]]\n\nFirst, calculate A²:\n\nA² = [[1+1, 1+1], [1+1, 1+1]] = [[2, 2], [2, 2]] = 2A\n\nTherefore, A² = 2A.\n\nNow multiply by A to obtain higher powers:\n\nA³ = A²A = 2A² = 2(2A) = 4A\n\nContinuing this pattern gives Aⁿ = 2ⁿ⁻¹A for every positive integer n.\n\nFor n = 6:\n\nA⁶ = 2⁵A = 32A\n\nThe question states A⁶ = kA'. Since A is symmetric, A' = A. Hence 32A = kA, giving k = 32.\n\nThe correct answer is option A.",
+    "difficulty": "medium",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2025,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MA-KCET-MAT-2025-Q15",
+    "question": "If $A$ is a square matrix satisfying the equation $A^2 - 5A + 7I = 0$, where $I$ is the identity matrix and $0$ is the null matrix, then $A^{-1} =$",
+    "imageUrl": null,
+    "options": [
+      "$\\frac{1}{7}(5I - A)$",
+      "$\\frac{1}{7}(A - 5I)$",
+      "$7(5I - A)$",
+      "$\\frac{1}{5}(7I - A)$"
+    ],
+    "correctOption": 0,
+    "explanation": "We are given:\n\nA² - 5A + 7I = 0\n\nRearrange the equation:\n\nA² - 5A = -7I\n\nFactor A on the left:\n\nA(A - 5I) = -7I\n\nEquivalently:\n\nA(5I - A) = 7I\n\nDivide by 7:\n\nA[(5I - A)/7] = I\n\nFor square matrices, a right inverse is also the inverse. Therefore, A is invertible and:\n\nA⁻¹ = (1/7)(5I - A)\n\nThis matches option A.\n\nNotice that this derivation establishes the existence of the inverse; it does not assume at the beginning that A⁻¹ already exists.",
+    "difficulty": "medium",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2025,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MA-KCET-MAT-2025-Q17",
+    "question": "If $B = \\begin{bmatrix} 1 & 3 \\\\ 1 & \\alpha \\end{bmatrix}$ is the adjoint of a matrix $A$ and $|A| = 2$, then the value of $\\alpha$ is",
+    "imageUrl": null,
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "correctOption": 1,
+    "explanation": "For a 2 × 2 matrix A = [[a, b], [c, d]], its adjoint is:\n\nadj(A) = [[d, -b], [-c, a]]\n\nWe are told that:\n\nadj(A) = [[1, 3], [1, α]]\n\nCompare corresponding entries:\n\nd = 1,  -b = 3,  -c = 1,  a = α\n\nThus:\n\nA = [[α, -3], [-1, 1]]\n\nThe determinant of A is:\n\n|A| = α(1) - (-3)(-1) = α - 3\n\nGiven |A| = 2:\n\nα - 3 = 2\n\nTherefore, α = 5, which is option B.\n\nThe calculation verifies the answer for the matrix and options supplied in this dataset.",
+    "difficulty": "medium",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2025,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "MA-KCET-MAT-2024-Q18",
+    "question": "If $A$ is a square matrix such that $A^2 = A$, then $(I + A)^3$ is equal to",
+    "imageUrl": null,
+    "options": [
+      "$A - I$",
+      "$7A$",
+      "$7A + I$",
+      "$I - 7A$"
+    ],
+    "correctOption": 2,
+    "explanation": "We are given A² = A, so A is idempotent.\n\nExpand using the binomial theorem:\n\n(I + A)³ = I + 3A + 3A² + A³\n\nSince A² = A, multiplying by A gives A³ = A² = A.\n\nSubstitute these identities:\n\n(I + A)³ = I + 3A + 3A + A\n\nCollect the A terms:\n\n(I + A)³ = I + 7A\n\nTherefore, the correct answer is option C.",
+    "difficulty": "medium",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2024,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MA-KCET-MAT-2024-Q19",
+    "question": "If $A = \\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix}$, then $A^{10}$ is equal to",
+    "imageUrl": null,
+    "options": [
+      "$2^8 A$",
+      "$2^9 A$",
+      "$2^{10} A$",
+      "$2^{11} A$"
+    ],
+    "correctOption": 1,
+    "explanation": "The matrix is:\n\nA = [[1, 1], [1, 1]]\n\nMultiply A by itself:\n\nA² = [[2, 2], [2, 2]] = 2A\n\nThen:\n\nA³ = A²A = 2A² = 4A\n\nEach additional multiplication by A introduces another factor of 2. Therefore, for every positive integer n:\n\nAⁿ = 2ⁿ⁻¹A\n\nPutting n = 10:\n\nA¹⁰ = 2⁹A\n\nTherefore, the correct answer is option B.",
+    "difficulty": "medium",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2024,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MA-KCET-MAT-2024-Q21",
+    "question": "If $P = \\begin{bmatrix} 1 & \\alpha & 3 \\\\ 1 & 3 & 3 \\\\ 2 & 4 & 4 \\end{bmatrix}$ is the adjoint of a $3 \\times 3$ matrix $A$ and $|A| = 4$, then $\\alpha$ is equal to",
+    "imageUrl": null,
+    "options": [
+      "4",
+      "5",
+      "11",
+      "0"
+    ],
+    "correctOption": 2,
+    "explanation": "For an n × n matrix A, the determinant of its adjoint satisfies:\n\n|adj(A)| = |A|ⁿ⁻¹\n\nHere A is 3 × 3 and |A| = 4. Therefore:\n\n|adj(A)| = 4² = 16\n\nThe given matrix P is adj(A):\n\nP = [[1, α, 3], [1, 3, 3], [2, 4, 4]]\n\nCalculate its determinant by expanding along the first row:\n\n|P| = 1(3·4 - 3·4) - α(1·4 - 3·2) + 3(1·4 - 3·2)\n\n= 0 - α(4 - 6) + 3(4 - 6)\n\n= 2α - 6\n\nSince P = adj(A), its determinant must be 16:\n\n2α - 6 = 16\n\n2α = 22\n\nα = 11\n\nTherefore, the correct answer is option C.",
+    "difficulty": "medium",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2024,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "MA-KCET-MAT-2023-Q24",
+    "question": "If $x\\begin{bmatrix} 3 \\\\ 2 \\end{bmatrix} + y\\begin{bmatrix} 1 \\\\ -1 \\end{bmatrix} = \\begin{bmatrix} 15 \\\\ 5 \\end{bmatrix}$, then the value of $x$ and $y$ are",
+    "imageUrl": null,
+    "options": [
+      "$x=4, y=-3$",
+      "$x=-4, y=-3$",
+      "$x=-4, y=3$",
+      "$x=4, y=3$"
+    ],
+    "correctOption": 3,
+    "explanation": "Equate the corresponding components of the two column vectors:\n\nx[3, 2]' + y[1, -1]' = [15, 5]'\n\nThis gives two simultaneous equations:\n\n3x + y = 15\n\n2x - y = 5\n\nAdd the equations to eliminate y:\n\n5x = 20\n\nTherefore, x = 4.\n\nSubstitute x = 4 into the first equation:\n\n3(4) + y = 15\n\n12 + y = 15, so y = 3.\n\nHence x = 4 and y = 3. The correct answer is option D.",
+    "difficulty": "easy",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2023,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2023-Q25",
+    "question": "If $A$ and $B$ are two matrices such that $AB = B$ and $BA = A$, then $A^2 + B^2$ equals",
+    "imageUrl": null,
+    "options": [
+      "$2AB$",
+      "$AB$",
+      "$2BA$",
+      "$A+B$"
+    ],
+    "correctOption": 3,
+    "explanation": "We are given:\n\nAB = B and BA = A\n\nWe need to find A² + B². Use associativity of matrix multiplication; do not interchange the order of factors.\n\nFirst, consider A²:\n\nA² = A(BA)\n\nUsing associativity:\n\nA² = (AB)A\n\nSince AB = B:\n\nA² = BA = A\n\nThus, A² = A.\n\nNow consider B²:\n\nB² = B(AB)\n\nUsing associativity:\n\nB² = (BA)B\n\nSince BA = A:\n\nB² = AB = B\n\nThus, B² = B.\n\nAdding the two results:\n\nA² + B² = A + B\n\nTherefore, the correct answer is option D.",
+    "difficulty": "medium",
+    "concept": "Matrix Multiplication & Properties",
+    "year": 2023,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "MA-KCET-MAT-2023-Q28",
+    "question": "If $A = \\begin{bmatrix} 1 & \\tan(\\alpha/2) \\\\ -\\tan(\\alpha/2) & 1 \\end{bmatrix}$ and $AB = I$, then $B$ is equal to",
+    "imageUrl": null,
+    "options": [
+      "$\\cos^2(\\alpha/2) \\cdot A$",
+      "$\\cos^2(\\alpha/2) \\cdot I$",
+      "$\\sin^2(\\alpha/2) \\cdot A$",
+      "$\\cos^2(\\alpha/2) \\cdot A^T$"
+    ],
+    "correctOption": 3,
+    "explanation": "Let t = tan(α/2). The given matrix is:\n\nA = [[1, t], [-t, 1]]\n\nSince AB = I, B is the inverse of A, provided A is invertible.\n\nFor a 2 × 2 matrix [[a, b], [c, d]], the inverse is (1/(ad-bc))[[d, -b], [-c, a]].\n\nThe determinant of A is:\n\n|A| = 1·1 - t(-t) = 1 + t²\n\nUsing 1 + tan²(α/2) = sec²(α/2):\n\n|A| = sec²(α/2)\n\nThe adjoint is:\n\nadj(A) = [[1, -t], [t, 1]] = A'\n\nTherefore:\n\nB = A⁻¹ = adj(A)/|A|\n\n= A'/sec²(α/2)\n\n= cos²(α/2) A'\n\nThis is option D.",
+    "difficulty": "hard",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2023,
+    "est_time_seconds": 90
+  },
+  {
+    "id": "MA-KCET-MAT-2022-Q30",
+    "question": "If $A = \\begin{bmatrix} 2 & -1 \\\\ 3 & -2 \\end{bmatrix}$, then the inverse of the matrix $A^3$ is",
+    "imageUrl": null,
+    "options": [
+      "$A$",
+      "-1",
+      "1",
+      "$-A$"
+    ],
+    "correctOption": 0,
+    "explanation": "The given matrix is:\n\nA = [[2, -1], [3, -2]]\n\nFirst calculate its determinant:\n\n|A| = 2(-2) - (-1)(3) = -4 + 3 = -1\n\nIts adjoint is:\n\nadj(A) = [[-2, 1], [-3, 2]]\n\nTherefore:\n\nA⁻¹ = (1/|A|)adj(A)\n\n= -1[[-2, 1], [-3, 2]]\n\n= [[2, -1], [3, -2]] = A\n\nSo A⁻¹ = A. Multiplying both sides by A gives A² = I.\n\nHence A³ = A²A = IA = A.\n\nTaking inverses:\n\n(A³)⁻¹ = A⁻¹ = A\n\nTherefore, the correct answer is option A.",
+    "difficulty": "medium",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2022,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MA-KCET-MAT-2022-Q31",
+    "question": "If $A$ is a skew symmetric matrix, then $A^{2021}$ is",
+    "imageUrl": null,
+    "options": [
+      "Row matrix",
+      "Column matrix",
+      "Symmetric matrix",
+      "Skew symmetric matrix"
+    ],
+    "correctOption": 3,
+    "explanation": "A skew-symmetric matrix satisfies:\n\nA' = -A\n\nUse the transpose property for a product of matrices:\n\n(XY)' = Y'X'\n\nApplying this repeatedly gives:\n\n(A²⁰²¹)' = (A')²⁰²¹\n\nSubstitute A' = -A:\n\n(A²⁰²¹)' = (-A)²⁰²¹\n\nSince 2021 is odd:\n\n(-A)²⁰²¹ = -A²⁰²¹\n\nThus:\n\n(A²⁰²¹)' = -A²⁰²¹\n\nThis is exactly the defining condition for a skew-symmetric matrix. Therefore, A²⁰²¹ is skew-symmetric, and option D is correct.",
+    "difficulty": "easy",
+    "concept": "Transpose & Symmetric / Skew-Symmetric Matrices",
+    "year": 2022,
+    "est_time_seconds": 30
+  },
+  {
+    "id": "MA-KCET-MAT-2022-Q32",
+    "question": "If $A = \\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix}$, then $(aI + bA)^n$ is (where $I$ is the identity matrix of order 2)",
+    "imageUrl": null,
+    "options": [
+      "$a^2 I + a^{n-1} b \\cdot A$",
+      "$a^n I + n \\cdot a^{n-1} b \\cdot A$",
+      "$a^n I + n a^n b A$",
+      "$a^n I + b^n A$"
+    ],
+    "correctOption": 1,
+    "explanation": "The given matrix is:\n\nA = [[0, 1], [0, 0]]\n\nFirst calculate A²:\n\nA² = [[0, 0], [0, 0]] = 0\n\nTherefore, every power Aᵏ for k ≥ 2 is also the zero matrix.\n\nNow expand (aI + bA)ⁿ using the binomial theorem. Since I commutes with A:\n\n(aI + bA)ⁿ = (aI)ⁿ + n(aI)ⁿ⁻¹(bA) + terms containing A² or higher powers\n\nAll terms containing A² or higher powers vanish because A² = 0.\n\nThe remaining terms are:\n\n(aI)ⁿ = aⁿI\n\nn(aI)ⁿ⁻¹(bA) = naⁿ⁻¹bA\n\nTherefore:\n\n(aI + bA)ⁿ = aⁿI + naⁿ⁻¹bA\n\nThis is option B. The formula is for positive integer n.",
+    "difficulty": "hard",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2022,
+    "est_time_seconds": 90
+  },
+  {
+    "id": "MA-KCET-MAT-2021-Q36",
+    "question": "If $A = \\begin{bmatrix} 1 & -2 & 1 \\\\ 2 & 1 & 3 \\end{bmatrix}$ and $B = \\begin{bmatrix} 2 & 1 \\\\ 3 & 2 \\\\ 1 & 1 \\end{bmatrix}$, then $(AB)'$ is equal to",
+    "imageUrl": null,
+    "options": [
+      "$\\begin{bmatrix} -3 & -2 \\\\ 10 & 7 \\end{bmatrix}$",
+      "$\\begin{bmatrix} -3 & 10 \\\\ -2 & 7 \\end{bmatrix}$",
+      "$\\begin{bmatrix} -3 & 7 \\\\ 10 & 2 \\end{bmatrix}$",
+      "$\\begin{bmatrix} -3 & 7 \\\\ 10 & -2 \\end{bmatrix}$"
+    ],
+    "correctOption": 1,
+    "explanation": "The required expression is (AB)', so first calculate AB and then transpose the result.\n\nGiven:\n\nA = [[1, -2, 1], [2, 1, 3]]\n\nB = [[2, 1], [3, 2], [1, 1]]\n\nMultiply each row of A by each column of B:\n\nFirst row, first column: 1·2 + (-2)·3 + 1·1 = -3\n\nFirst row, second column: 1·1 + (-2)·2 + 1·1 = -2\n\nSecond row, first column: 2·2 + 1·3 + 3·1 = 10\n\nSecond row, second column: 2·1 + 1·2 + 3·1 = 7\n\nTherefore:\n\nAB = [[-3, -2], [10, 7]]\n\nTransposing interchanges rows and columns:\n\n(AB)' = [[-3, 10], [-2, 7]]\n\nThis matches option B.",
+    "difficulty": "easy",
+    "concept": "Matrix Multiplication & Properties",
+    "year": 2021,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2021-Q37",
+    "question": "Let $M$ be a $2 \\times 2$ symmetric matrix with integer entries. Then $M$ is invertible if",
+    "imageUrl": null,
+    "options": [
+      "the first column of $M$ is the transpose of the second row of $M$",
+      "the sum of the diagonal entries of M is non-zero",
+      "$M$ is a diagonal matrix with non-zero entries in the principal diagonal",
+      "the product of entries in the principal diagonal of $M$ is the product of entries in the other diagonal"
+    ],
+    "correctOption": 2,
+    "explanation": "Let the symmetric matrix be:\n\nM = [[a, b], [b, d]]\n\nA square matrix is invertible if and only if its determinant is non-zero.\n\n|M| = ad - b²\n\nOption A says that the first column is the transpose of the second row. This requires a = b = d.\n\nOption B, in the revised options, says that the trace a + d is non-zero. This does not guarantee invertibility. For example, M = [[1, 1], [1, 1]] has trace 2 but determinant 0.\n\nOption C says that M is diagonal with both principal diagonal entries non-zero. In that case b = 0 and a,d are both non-zero.\n\nTherefore:\n\n|M| = ad ≠ 0\n\nSo M is guaranteed to be invertible under option C.\n\nOption D says ad = b², which makes the determinant zero, so it does not guarantee invertibility.\n\nHence option C is the correct answer.",
+    "difficulty": "medium",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2021,
+    "est_time_seconds": 75
+  },
+  {
+    "id": "MA-KCET-MAT-2021-Q39",
+    "question": "If $A$ and $B$ are invertible matrices, then which of the following is not correct?",
+    "imageUrl": null,
+    "options": [
+      "$\\text{adj}\\,A = |A| A^{-1}$",
+      "$\\det(A^{-1}) = [\\det A]^{-1}$",
+      "$(AB)^{-1} = B^{-1}A^{-1}$",
+      "$(A+B)^{-1} = B^{-1} + A^{-1}$"
+    ],
+    "correctOption": 3,
+    "explanation": "Check each statement using standard inverse and determinant identities.\n\nOption A is correct. For an invertible matrix:\n\nA(adj A) = |A|I\n\nMultiplying by A⁻¹ gives adj A = |A|A⁻¹.\n\nOption B is correct because:\n\ndet(A⁻¹) = 1/det(A)\n\nOption C is correct because the inverse of a product reverses the order:\n\n(AB)⁻¹ = B⁻¹A⁻¹\n\nOption D is not a general identity. Matrix addition does not obey an inverse rule analogous to the product rule.\n\nFor a simple counterexample, take A = I and B = I:\n\n(A + B)⁻¹ = (2I)⁻¹ = (1/2)I\n\nBut:\n\nA⁻¹ + B⁻¹ = I + I = 2I\n\nThese are not equal.\n\nTherefore, option D is the statement that is not correct.",
+    "difficulty": "easy",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2021,
+    "est_time_seconds": 30
+  },
+  {
+    "id": "MA-KCET-MAT-2020-Q41",
+    "question": "If $A = \\begin{bmatrix} 0 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ 1 & 0 & 0 \\end{bmatrix}$, then $A^4$ is equal to",
+    "imageUrl": null,
+    "options": [
+      "$A$",
+      "$2A$",
+      "$I$",
+      "$4A$"
+    ],
+    "correctOption": 2,
+    "explanation": "The given matrix is:\n\nA = [[0, 0, 1], [0, 1, 0], [1, 0, 0]]\n\nThis matrix swaps the first and third coordinates while leaving the second coordinate unchanged.\n\nApplying the same swap twice restores every coordinate to its original position. Therefore:\n\nA² = I\n\nNow:\n\nA⁴ = (A²)² = I² = I\n\nHence the correct answer is option C.",
+    "difficulty": "medium",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2020,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2020-Q42",
+    "question": "If $\\begin{bmatrix} 2 & 1 \\\\ 3 & 2 \\end{bmatrix} A = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$, then the matrix $A$ is",
+    "imageUrl": null,
+    "options": [
+      "$\\begin{bmatrix} 2 & 1 \\\\ 3 & 2 \\end{bmatrix}$",
+      "$\\begin{bmatrix} 2 & -1 \\\\ -3 & 2 \\end{bmatrix}$",
+      "$\\begin{bmatrix} -2 & 1 \\\\ 3 & -2 \\end{bmatrix}$",
+      "$\\begin{bmatrix} 2 & -1 \\\\ 3 & 2 \\end{bmatrix}$"
+    ],
+    "correctOption": 1,
+    "explanation": "Let:\n\nC = [[2, 1], [3, 2]]\n\nThe equation is CA = I. Therefore, A must be C⁻¹.\n\nCalculate the determinant:\n\n|C| = 2·2 - 1·3 = 4 - 3 = 1\n\nFor a 2 × 2 matrix [[a, b], [c, d]], its adjoint is [[d, -b], [-c, a]].\n\nThus:\n\nadj(C) = [[2, -1], [-3, 2]]\n\nSince the determinant is 1:\n\nC⁻¹ = (1/1)adj(C) = [[2, -1], [-3, 2]]\n\nTherefore, A is the matrix in option B.",
+    "difficulty": "easy",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2020,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2020-Q44",
+    "question": "If $A$ and $B$ are square matrices of same order and $B$ is a skew symmetric matrix, then $A'BA$ is",
+    "imageUrl": null,
+    "options": [
+      "Symmetric matrix",
+      "Null matrix",
+      "Diagonal matrix",
+      "Skew symmetric matrix"
+    ],
+    "correctOption": 3,
+    "explanation": "We are given that B is skew-symmetric, so:\n\nB' = -B\n\nWe need to determine the symmetry type of A'BA.\n\nUse the transpose-of-a-product rule:\n\n(XYZ)' = Z'Y'X'\n\nTherefore:\n\n(A'BA)' = A'B'(A')'\n\nSince the transpose of A' is A:\n\n(A'BA)' = A'B'A\n\nNow substitute B' = -B:\n\n(A'BA)' = A'(-B)A = -(A'BA)\n\nThis satisfies the defining condition X' = -X for a skew-symmetric matrix.\n\nTherefore, A'BA is skew-symmetric. The correct answer is option D.",
+    "difficulty": "medium",
+    "concept": "Transpose & Symmetric / Skew-Symmetric Matrices",
+    "year": 2020,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MA-KCET-MAT-2019-Q47",
+    "question": "The inverse of the matrix $\\begin{bmatrix} 2 & 5 & 0 \\\\ 0 & 1 & 1 \\\\ -1 & 0 & 3 \\end{bmatrix}$ is",
+    "imageUrl": null,
+    "options": [
+      "$\\begin{bmatrix} 3 & -15 & 5 \\\\ -1 & 6 & -2 \\\\ 1 & -5 & 2 \\end{bmatrix}$",
+      "$\\begin{bmatrix} 3 & -1 & 1 \\\\ -15 & 6 & -5 \\\\ 5 & -2 & 2 \\end{bmatrix}$",
+      "$\\begin{bmatrix} 3 & -15 & 5 \\\\ -1 & 6 & -2 \\\\ 1 & -5 & -2 \\end{bmatrix}$",
+      "$\\begin{bmatrix} 3 & -5 & 5 \\\\ -1 & -6 & -2 \\\\ 1 & -5 & 2 \\end{bmatrix}$"
+    ],
+    "correctOption": 0,
+    "explanation": "Let the given matrix be:\n\nA = [[2, 5, 0], [0, 1, 1], [-1, 0, 3]]\n\nFor a 3 × 3 matrix, A⁻¹ = adj(A)/|A|, provided the determinant is non-zero.\n\nCalculating the determinant by expansion along the first row:\n\n|A| = 2(1·3 - 1·0) - 5(0·3 - 1·(-1)) + 0\n\n= 6 - 5 = 1\n\nThe cofactor matrix is:\n\nC = [[3, -1, 1], [-15, 6, -5], [5, -2, 2]]\n\nThe adjoint is the transpose of the cofactor matrix:\n\nadj(A) = [[3, -15, 5], [-1, 6, -2], [1, -5, 2]]\n\nSince |A| = 1:\n\nA⁻¹ = adj(A)\n\n= [[3, -15, 5], [-1, 6, -2], [1, -5, 2]]\n\nThis is option A.",
+    "difficulty": "hard",
+    "concept": "Inverse of a Matrix & Adjoint",
+    "year": 2019,
+    "est_time_seconds": 120
+  },
+  {
+    "id": "MA-KCET-MAT-2019-Q48",
+    "question": "If $P$ and $Q$ are symmetric matrices of the same order, then $PQ - QP$ is",
+    "imageUrl": null,
+    "options": [
+      "zero matrix",
+      "identity matrix",
+      "skew-symmetric matrix",
+      "symmetric matrix"
+    ],
+    "correctOption": 2,
+    "explanation": "We are given that P and Q are symmetric matrices. Therefore:\n\nP' = P and Q' = Q\n\nTake the transpose of the expression:\n\n(PQ - QP)' = (PQ)' - (QP)'\n\nUsing (XY)' = Y'X':\n\n(PQ - QP)' = Q'P' - P'Q'\n\nSubstitute the symmetric-matrix identities:\n\n(PQ - QP)' = QP - PQ\n\nFactor out -1:\n\n(PQ - QP)' = -(PQ - QP)\n\nThis is the defining property of a skew-symmetric matrix.\n\nTherefore, PQ - QP is skew-symmetric, and option C is correct.",
+    "difficulty": "easy",
+    "concept": "Transpose & Symmetric / Skew-Symmetric Matrices",
+    "year": 2019,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2019-Q49",
+    "question": "If $3A + 4B' = \\begin{bmatrix} 7 & -10 & 17 \\\\ 0 & 6 & 31 \\end{bmatrix}$ and $2B - 3A' = \\begin{bmatrix} -1 & 18 \\\\ 4 & 0 \\\\ -5 & -7 \\end{bmatrix}$, then $B =$",
+    "imageUrl": null,
+    "options": [
+      "$\\begin{bmatrix} -1 & -18 \\\\ 4 & -16 \\\\ -5 & -7 \\end{bmatrix}$",
+      "$\\begin{bmatrix} 1 & 3 \\\\ -1 & 1 \\\\ 2 & 4 \\end{bmatrix}$",
+      "$\\begin{bmatrix} 1 & 3 \\\\ -1 & 1 \\\\ 2 & -4 \\end{bmatrix}$",
+      "$\\begin{bmatrix} 1 & -3 \\\\ -1 & 1 \\\\ 2 & 4 \\end{bmatrix}$"
+    ],
+    "correctOption": 1,
+    "explanation": "Let the two given equations be:\n\n3A + 4B' = [[7, -10, 17], [0, 6, 31]]  ...(1)\n\n2B - 3A' = [[-1, 18], [4, 0], [-5, -7]]  ...(2)\n\nTranspose equation (2). The transpose of a difference is the difference of the transposes:\n\n2B' - 3A = [[-1, 4, -5], [18, 0, -7]]  ...(3)\n\nNow add equations (1) and (3). The 3A and -3A terms cancel:\n\n6B' = [[7, -10, 17], [0, 6, 31]]\n      + [[-1, 4, -5], [18, 0, -7]]\n\n6B' = [[6, -6, 12], [18, 6, 24]]\n\nDivide every entry by 6:\n\nB' = [[1, -1, 2], [3, 1, 4]]\n\nTranspose to obtain B:\n\nB = [[1, 3], [-1, 1], [2, 4]]\n\nThis matches option B. The correct answer is option B.",
+    "difficulty": "hard",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2019,
+    "est_time_seconds": 120
+  },
+  {
+    "id": "MA-KCET-MAT-2018-Q53",
+    "question": "If $A = \\begin{bmatrix} 2 & -2 \\\\ -2 & 2 \\end{bmatrix}$, then $A^n = 2^k A$, where $k$ is equal to",
+    "imageUrl": null,
+    "options": [
+      "$2^{n-1}$",
+      "$n+1$",
+      "$n-1$",
+      "$2(n-1)$"
+    ],
+    "correctOption": 3,
+    "explanation": "The given matrix is:\n\nA = [[2, -2], [-2, 2]]\n\nFirst calculate A²:\n\nA² = [[8, -8], [-8, 8]] = 4A\n\nThus A² = 4A.\n\nMultiply by A to obtain A³:\n\nA³ = A²A = 4A² = 4(4A) = 16A\n\nEach additional multiplication by A introduces another factor of 4. Hence, for every positive integer n:\n\nAⁿ = 4ⁿ⁻¹A\n\nSince 4 = 2²:\n\nAⁿ = 2²⁽ⁿ⁻¹⁾A\n\nThe question writes Aⁿ = 2ᵏA. Comparing exponents gives:\n\nk = 2(n - 1)\n\nTherefore, the correct answer is option D.",
+    "difficulty": "medium",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2018,
+    "est_time_seconds": 60
+  },
+  {
+    "id": "MA-KCET-MAT-2018-Q54",
+    "question": "If $\\begin{bmatrix} 1 & 1 \\\\ -1 & 1 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\end{bmatrix} = \\begin{bmatrix} 2 \\\\ 4 \\end{bmatrix}$, then the values of $x$ and $y$ respectively are",
+    "imageUrl": null,
+    "options": [
+      "-3, -1",
+      "1, 3",
+      "3, 1",
+      "-1, 3"
+    ],
+    "correctOption": 3,
+    "explanation": "Write the matrix equation as two simultaneous equations by matching corresponding entries:\n\n[[1, 1], [-1, 1]][x, y]' = [2, 4]'\n\nThis gives:\n\nx + y = 2\n\n-x + y = 4\n\nAdd the equations:\n\n2y = 6\n\nTherefore, y = 3.\n\nSubstitute y = 3 into x + y = 2:\n\nx + 3 = 2\n\nTherefore, x = -1.\n\nThe values in the order x, y are (-1, 3). The correct answer is option D.",
+    "difficulty": "easy",
+    "concept": "Matrix Multiplication & Properties",
+    "year": 2018,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2018-Q55",
+    "question": "If $A = \\begin{bmatrix} \\cos\\alpha & \\sin\\alpha \\\\ -\\sin\\alpha & \\cos\\alpha \\end{bmatrix}$, then $AA'$ is equal to",
+    "imageUrl": null,
+    "options": [
+      "$A$",
+      "zero matrix",
+      "$A'$",
+      "$I$"
+    ],
+    "correctOption": 3,
+    "explanation": "The matrix is:\n\nA = [[cos α, sin α], [-sin α, cos α]]\n\nIts transpose is:\n\nA' = [[cos α, -sin α], [sin α, cos α]]\n\nNow multiply A by A':\n\nAA' = [[cos²α + sin²α, -cos α sin α + sin α cos α],\n       [-sin α cos α + cos α sin α, sin²α + cos²α]]\n\nUsing the trigonometric identity cos²α + sin²α = 1, each diagonal entry is 1.\n\nThe off-diagonal terms cancel to zero.\n\nTherefore:\n\nAA' = [[1, 0], [0, 1]] = I\n\nThe correct answer is option D.",
+    "difficulty": "easy",
+    "concept": "Matrix Multiplication & Properties",
+    "year": 2018,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2017-Q62",
+    "question": "If $2\\begin{bmatrix} 1 & 3 \\\\ 0 & x \\end{bmatrix} + \\begin{bmatrix} y & 0 \\\\ 1 & 2 \\end{bmatrix} = \\begin{bmatrix} 5 & 6 \\\\ 1 & 8 \\end{bmatrix}$, then the values of $x$ and $y$ are",
+    "imageUrl": null,
+    "options": [
+      "$x=3, y=3$",
+      "$x=-3, y=3$",
+      "$x=3, y=-3$",
+      "$x=-3, y=-3$"
+    ],
+    "correctOption": 0,
+    "explanation": "First multiply the first matrix by the scalar 2:\n\n2[[1, 3], [0, x]] = [[2, 6], [0, 2x]]\n\nNow add the second matrix:\n\n[[2, 6], [0, 2x]] + [[y, 0], [1, 2]]\n= [[2+y, 6], [1, 2x+2]]\n\nThis is equal to:\n\n[[5, 6], [1, 8]]\n\nCorresponding entries of equal matrices must be equal.\n\nFrom the top-left entries:\n\n2 + y = 5, so y = 3.\n\nFrom the bottom-right entries:\n\n2x + 2 = 8, so 2x = 6 and x = 3.\n\nTherefore, x = 3 and y = 3. The correct answer is option A.",
+    "difficulty": "easy",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2017,
+    "est_time_seconds": 45
+  },
+  {
+    "id": "MA-KCET-MAT-2017-Q64",
+    "question": "If $A = \\frac{1}{\\pi} \\begin{bmatrix} \\sin^{-1}(\\pi x) & \\tan^{-1}(x/\\pi) \\\\ \\sin^{-1}(x/\\pi) & \\cot^{-1}(\\pi x) \\end{bmatrix}$ and $B = \\frac{1}{\\pi} \\begin{bmatrix} -\\cos^{-1}(\\pi x) & \\tan^{-1}(x/\\pi) \\\\ \\sin^{-1}(x/\\pi) & -\\tan^{-1}(\\pi x) \\end{bmatrix}$, then $A - B$ is",
+    "imageUrl": null,
+    "options": [
+      "0",
+      "$\\frac{1}{2}I$",
+      "$I$",
+      "$2I$"
+    ],
+    "correctOption": 1,
+    "explanation": "Factor out the common scalar 1/π from A - B. Subtract the corresponding entries.\n\nThe top-left entry becomes:\n\nsin⁻¹(πx) - [-cos⁻¹(πx)]\n= sin⁻¹(πx) + cos⁻¹(πx)\n\nFor values in the common domain [-1, 1]:\n\nsin⁻¹(u) + cos⁻¹(u) = π/2\n\nThe bottom-right entry becomes:\n\ncot⁻¹(πx) - [-tan⁻¹(πx)]\n= cot⁻¹(πx) + tan⁻¹(πx)\n\nUsing the standard principal-value identity for real x:\n\ncot⁻¹(u) + tan⁻¹(u) = π/2\n\nThe two off-diagonal entries cancel because the corresponding entries of A and B are identical.\n\nThus:\n\nA - B = (1/π)[[π/2, 0], [0, π/2]]\n\n= (1/2)I\n\nTherefore, the correct answer is option B.",
+    "difficulty": "hard",
+    "concept": "Matrix Operations & Algebra",
+    "year": 2017,
+    "est_time_seconds": 120
+  },
+  {
+    "id": "MA-KCET-MAT-2017-Q65",
+    "question": "If a matrix $A$ is both symmetric and skew symmetric, then",
+    "imageUrl": null,
+    "options": [
+      "A is an identity matrix",
+      "A is a zero matrix",
+      "A is a non-zero diagonal matrix",
+      "A is a non-zero skew-symmetric matrix"
+    ],
+    "correctOption": 1,
+    "explanation": "A symmetric matrix satisfies:\n\nA' = A\n\nA skew-symmetric matrix satisfies:\n\nA' = -A\n\nIf A has both properties, equate the right-hand sides:\n\nA = -A\n\nAdd A to both sides:\n\n2A = 0\n\nOver the real numbers, this gives A = 0. Therefore, the matrix must be the zero matrix.\n\nThe revised options are designed so that the zero matrix is the only correct choice: it is not the identity matrix, it is not a non-zero diagonal matrix, and it is not a non-zero skew-symmetric matrix.\n\nHence option B is correct.",
+    "difficulty": "easy",
+    "concept": "Transpose & Symmetric / Skew-Symmetric Matrices",
+    "year": 2017,
+    "est_time_seconds": 30
+  }
+]
