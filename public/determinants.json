@@ -21,13 +21,13 @@
     "question": "If $A$ and $B$ are invertible square matrices of order $n$, then which of the following is not correct?",
     "imageUrl": null,
     "options": [
-      "$\\det(AB) = \\det(A) \\cdot \\det(B)$",
-      "$\\det(kA) = k^n \\det(A)$",
-      "$\\det(A+B) = \\det(A) + \\det(B)$",
-      "$\\det(A^{-1}) = \\frac{1}{\\det(A)}$"
+      "$|AB| = |A| \\cdot |B|$",
+      "$|kA| = k^n |A|$",
+      "$|A+B| = |A| + |B|$",
+      "$|A^{-1}| = \\frac{1}{|A|}$"
     ],
     "correctOption": 2,
-    "explanation": "The determinant of a product is the product of the determinants. Also, $\\det(kA) = k^n\\det(A)$, and $\\det(A^{-1}) = \\frac{1}{\\det(A)}$.\n\nHowever, the determinant of a sum is not generally equal to the sum of the determinants. Therefore, option C is incorrect.",
+    "explanation": "The determinant of a product is the product of the determinants. Also, $|kA| = k^n|A|$, and $|A^{-1}| = \\frac{1}{|A|}$.\n\nHowever, the determinant of a sum is not generally equal to the sum of the determinants. Therefore, option C is incorrect.",
     "difficulty": "easy",
     "concept": "Properties of Determinants",
     "year": 2026,
@@ -69,7 +69,7 @@
   },
   {
     "id": "DE-KCET-MAT-2025-Q16",
-    "question": "If $A$ is a square matrix of order $3 \\times 3$, $\\det(A) = 3$, then the value of $\\det(3A^{-1})$ is",
+    "question": "If $A$ is a square matrix of order $3 \\times 3$, $|A| = 3$, then the value of $|3A^{-1}|$ is",
     "imageUrl": null,
     "options": [
       "$\\frac{1}{3}$",
@@ -78,7 +78,7 @@
       "9"
     ],
     "correctOption": 3,
-    "explanation": "For a $3 \\times 3$ matrix, $\\det(kA) = k^3 \\det(A)$. Also, $\\det(A^{-1}) = \\frac{1}{\\det(A)}$.\n\nTherefore, $\\det(3A^{-1}) = 3^3 \\cdot \\frac{1}{3} = \\frac{27}{3} = 9$.",
+    "explanation": "For a $3 \\times 3$ matrix, $|kA| = k^3 |A|$. Also, $|A^{-1}| = \\frac{1}{|A|}$.\n\nTherefore, $|3A^{-1}| = 3^3 \\cdot \\frac{1}{3} = \\frac{27}{3} = 9$.",
     "difficulty": "medium",
     "concept": "Properties of Determinants",
     "year": 2025,
@@ -95,7 +95,7 @@
       "9"
     ],
     "correctOption": 1,
-    "explanation": "For a $2 \\times 2$ matrix $A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$, $\\text{adj}(A) = \\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}$. Comparing this with $B$ gives $d = 1$, $b = -3$, $c = -1$ and $a = \\alpha$.\n\nTherefore, $\\det(A) = ad - bc = \\alpha(1) - (-3)(-1) = \\alpha - 3$.\n\nSince $\\det(A) = 2$, $\\alpha - 3 = 2$, so $\\alpha = 5$.",
+    "explanation": "For a $2 \\times 2$ matrix $A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$, $\\text{adj}(A) = \\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}$. Comparing this with $B$ gives $d = 1$, $b = -3$, $c = -1$ and $a = \\alpha$.\n\nTherefore, $|A| = ad - bc = \\alpha(1) - (-3)(-1) = \\alpha - 3$.\n\nSince $|A| = 2$, $\\alpha - 3 = 2$, so $\\alpha = 5$.",
     "difficulty": "medium",
     "concept": "Adjoint, Inverse & Minors/Cofactors",
     "year": 2025,
@@ -112,7 +112,7 @@
       "0"
     ],
     "correctOption": 2,
-    "explanation": "For a $3 \\times 3$ matrix, $\\det(\\text{adj}(A)) = (\\det(A))^2$. Therefore, $\\det(P) = 4^2 = 16$.\n\nExpanding $P$ gives $\\det(P) = 1(12-12) - \\alpha(4-6) + 3(4-6) = 2\\alpha - 6$.\n\nEquating, $2\\alpha - 6 = 16$, so $\\alpha = 11$.",
+    "explanation": "For a $3 \\times 3$ matrix, $|\\text{adj}(A)| = (|A|)^2$. Therefore, $|P| = 4^2 = 16$.\n\nExpanding $P$ gives $|P| = 1(12-12) - \\alpha(4-6) + 3(4-6) = 2\\alpha - 6$.\n\nEquating, $2\\alpha - 6 = 16$, so $\\alpha = 11$.",
     "difficulty": "medium",
     "concept": "Adjoint, Inverse & Minors/Cofactors",
     "year": 2024,
@@ -197,7 +197,7 @@
       "$\\cos^2(\\alpha/2) \\cdot A^T$"
     ],
     "correctOption": 3,
-    "explanation": "Since $AB = I$, $B = A^{-1}$.\n\nFor a $2 \\times 2$ matrix, $A^{-1} = \\frac{\\text{adj}(A)}{\\det(A)}$. Here $\\det(A) = 1 + \\tan^2(\\alpha/2) = \\sec^2(\\alpha/2)$.\n\nAlso, $\\text{adj}(A) = A^T$. Thus $B = \\cos^2(\\alpha/2) \\cdot A^T$.",
+    "explanation": "Since $AB = I$, $B = A^{-1}$.\n\nFor a $2 \\times 2$ matrix, $A^{-1} = \\frac{\\text{adj}(A)}{|A|}$. Here $|A| = 1 + \\tan^2(\\alpha/2) = \\sec^2(\\alpha/2)$.\n\nAlso, $\\text{adj}(A) = A^T$. Thus $B = \\cos^2(\\alpha/2) \\cdot A^T$.",
     "difficulty": "hard",
     "concept": "Adjoint, Inverse & Minors/Cofactors",
     "year": 2023,
@@ -214,7 +214,7 @@
       "$\\pm 5$"
     ],
     "correctOption": 2,
-    "explanation": "For a $3 \\times 3$ matrix, $\\det(5 \\cdot \\text{adj}(A)) = 5^3 \\det(\\text{adj}(A))$. Also, $\\det(\\text{adj}(A)) = (\\det(A))^2$.\n\nTherefore, $125(\\det(A))^2 = 5$. This gives $(\\det(A))^2 = \\frac{1}{25}$, so $\\det(A) = \\pm \\frac{1}{5}$.",
+    "explanation": "For a $3 \\times 3$ matrix, $|5 \\cdot \\text{adj}(A)| = 5^3 |\\text{adj}(A)|$. Also, $|\\text{adj}(A)| = (|A|)^2$.\n\nTherefore, $125(|A|)^2 = 5$. This gives $(|A|)^2 = \\frac{1}{25}$, so $|A| = \\pm \\frac{1}{5}$.",
     "difficulty": "medium",
     "concept": "Adjoint, Inverse & Minors/Cofactors",
     "year": 2022,
@@ -265,7 +265,7 @@
       "585"
     ],
     "correctOption": 1,
-    "explanation": "For a $3 \\times 3$ matrix, $\\det(3AB) = 3^3 \\det(AB)$.\n\nUsing $\\det(AB) = \\det(A)\\det(B)$, we get $27 \\cdot 5 \\cdot 3 = 405$.",
+    "explanation": "For a $3 \\times 3$ matrix, $|3AB| = 3^3 |AB|$.\n\nUsing $|AB| = |A||B|$, we get $27 \\cdot 5 \\cdot 3 = 405$.",
     "difficulty": "easy",
     "concept": "Properties of Determinants",
     "year": 2021,
@@ -316,7 +316,7 @@
       "625"
     ],
     "correctOption": 1,
-    "explanation": "The identity $A \\cdot \\text{adj}(A) = \\det(A)I$ gives $A \\cdot \\text{adj}(A) = 5I$.\n\nTaking determinants, $\\det(5I) = 5^3 = 125$ because the matrix is of order $3$.",
+    "explanation": "The identity $A \\cdot \\text{adj}(A) = |A|I$ gives $A \\cdot \\text{adj}(A) = 5I$.\n\nTaking determinants, $|5I| = 5^3 = 125$ because the matrix is of order $3$.",
     "difficulty": "easy",
     "concept": "Adjoint, Inverse & Minors/Cofactors",
     "year": 2020,
@@ -350,7 +350,7 @@
       "-250"
     ],
     "correctOption": 3,
-    "explanation": "First, find the determinants of matrices $A$ and $B$. $\\det(A) = (1)(2) - (3)(4) = 2 - 12 = -10$.\n\n$\\det(B) = (2)(2) - (-1)(1) = 4 + 1 = 5$. Since the determinant of a transpose equals the determinant of the original matrix, $\\det(B') = \\det(B) = 5$.\n\nUsing the multiplicative property of determinants, $|ABB'| = \\det(A) \\cdot \\det(B) \\cdot \\det(B') = (-10) \\cdot 5 \\cdot 5 = -250$.",
+    "explanation": "First, find the determinants of matrices $A$ and $B$. $|A| = (1)(2) - (3)(4) = 2 - 12 = -10$.\n\n$|B| = (2)(2) - (-1)(1) = 4 + 1 = 5$. Since the determinant of a transpose equals the determinant of the original matrix, $|B'| = |B| = 5$.\n\nUsing the multiplicative property of determinants, $|ABB'| = |A| \\cdot |B| \\cdot |B'| = (-10) \\cdot 5 \\cdot 5 = -250$.",
     "difficulty": "easy",
     "concept": "Properties of Determinants",
     "year": 2019,
@@ -367,7 +367,7 @@
       "48"
     ],
     "correctOption": 0,
-    "explanation": "The determinant formed by the cofactors is the determinant of the cofactor matrix. Its determinant equals the determinant of the adjugate.\n\nFor a $3 \\times 3$ matrix, $\\det(\\text{adj}(A)) = (\\det(A))^2$.\n\nTherefore, the required value is $16^2 = 256$.",
+    "explanation": "The determinant formed by the cofactors is the determinant of the cofactor matrix. Its determinant equals the determinant of the adjugate.\n\nFor a $3 \\times 3$ matrix, $|\\text{adj}(A)| = (|A|)^2$.\n\nTherefore, the required value is $16^2 = 256$.",
     "difficulty": "medium",
     "concept": "Adjoint, Inverse & Minors/Cofactors",
     "year": 2019,
@@ -452,7 +452,7 @@
       "$15|A|$"
     ],
     "correctOption": 1,
-    "explanation": "For an $n \\times n$ matrix, $\\det(kA) = k^n \\det(A)$.\n\nSince the matrix is of order $3$, $\\det(5A) = 5^3 \\det(A) = 125 \\det(A)$.",
+    "explanation": "For an $n \\times n$ matrix, $|kA| = k^n |A|$.\n\nSince the matrix is of order $3$, $|5A| = 5^3 |A| = 125 |A|$.",
     "difficulty": "easy",
     "concept": "Properties of Determinants",
     "year": 2018,
@@ -503,7 +503,7 @@
       "$K^3|A|$"
     ],
     "correctOption": 3,
-    "explanation": "For an $n \\times n$ matrix, $\\det(kA) = k^n \\det(A)$.\n\nSince $A$ is a $3 \\times 3$ matrix, $\\det(KA) = K^3 \\det(A)$.",
+    "explanation": "For an $n \\times n$ matrix, $|kA| = k^n |A|$.\n\nSince $A$ is a $3 \\times 3$ matrix, $|KA| = K^3 |A|$.",
     "difficulty": "easy",
     "concept": "Properties of Determinants",
     "year": 2017,

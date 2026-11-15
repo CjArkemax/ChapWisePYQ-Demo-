@@ -27,7 +27,7 @@ export function TestHeader({ timeRemainingSeconds, onSubmitClick }: TestHeaderPr
         <Button variant="ghost" size="icon" onClick={handleBack}>
           <ChevronLeft className="h-5 w-5" />
         </Button>
-        <span className="font-semibold hidden sm:inline-block">Ray Optics</span>
+        <span className="font-semibold hidden sm:inline-block">ChapWise PYQ (Demo)</span>
       </div>
 
       <div className={`flex items-center gap-2 font-mono text-lg font-bold ${isLowTime ? 'text-destructive' : 'text-primary'}`}>
